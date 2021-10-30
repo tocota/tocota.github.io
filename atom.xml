@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Bamboo</title>
+  <title>王天文的个人博客</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://tocota.github.io/</id>
   
   <author>
-    <name>YuAng</name>
+    <name>王天文</name>
     
   </author>
   
@@ -83,7 +83,7 @@
     <link href="http://tocota.github.io/post/hexo-theme-bamboo/sidebar/"/>
     <id>http://tocota.github.io/post/hexo-theme-bamboo/sidebar/</id>
     <published>2021-09-28T03:11:00.000Z</published>
-    <updated>2021-09-28T09:42:37.963Z</updated>
+    <updated>2021-10-30T14:00:28.287Z</updated>
     
     <summary type="html">
     
@@ -150,7 +150,7 @@
     <link href="http://tocota.github.io/post/hexo-theme-bamboo/page/"/>
     <id>http://tocota.github.io/post/hexo-theme-bamboo/page/</id>
     <published>2021-07-05T03:11:00.000Z</published>
-    <updated>2021-10-08T07:32:46.223Z</updated>
+    <updated>2021-10-30T13:59:31.088Z</updated>
     
     <summary type="html">
     
