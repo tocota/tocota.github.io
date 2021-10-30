@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bamboo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://tocota.github.io/"/>
+  <updated>2021-10-09T07:41:23.588Z</updated>
+  <id>http://tocota.github.io/</id>
+  
+  <author>
+    <name>YuAng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新增mermaid</title>
+    <link href="http://tocota.github.io/post/mermaid/index/"/>
+    <id>http://tocota.github.io/post/mermaid/index/</id>
+    <published>2021-10-09T06:03:20.000Z</published>
+    <updated>2021-10-09T07:41:23.588Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;支持2.6.5+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;事例：&quot;&gt;&lt;a href=&quot;#事例：&quot; class=&quot;headerlink&quot; title=&quot;事例：&quot;&gt;&lt;/a&gt;事例：&lt;/h2&gt;&lt;div class=&quot;mermaid&quot;&gt;pie
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="mermaid" scheme="http://tocota.github.io/categories/mermaid/"/>
+    
+    
+      <category term="mermaid" scheme="http://tocota.github.io/tags/mermaid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新增mathjax</title>
+    <link href="http://tocota.github.io/post/mathjax/index/"/>
+    <id>http://tocota.github.io/post/mathjax/index/</id>
+    <published>2021-10-08T06:03:20.000Z</published>
+    <updated>2021-10-08T08:10:48.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在文章中设置&lt;code&gt;mathjax: true&lt;/code&gt;即可&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;需要v2.6.4+版本&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;事例：&quot;&gt;&lt;a href=&quot;#事例：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="mathjax" scheme="http://tocota.github.io/categories/mathjax/"/>
+    
+    
+      <category term="mathjax" scheme="http://tocota.github.io/tags/mathjax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-首页新增侧边栏</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo/sidebar/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo/sidebar/</id>
+    <published>2021-09-28T03:11:00.000Z</published>
+    <updated>2021-09-28T09:42:37.963Z</updated>
+    
+    <summary type="html">
+    
+      首页新增侧边栏
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="sidebar" scheme="http://tocota.github.io/tags/sidebar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>getFiles文件获取</title>
+    <link href="http://tocota.github.io/post/getfiles/"/>
+    <id>http://tocota.github.io/post/getfiles/</id>
+    <published>2021-08-10T03:35:00.000Z</published>
+    <updated>2021-08-12T03:12:13.768Z</updated>
+    
+    <summary type="html">
+    
+      会把某个文件夹下的文件显示在页面上。
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-基本配置（一）</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo-new/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo-new/</id>
+    <published>2021-07-05T03:12:00.000Z</published>
+    <updated>2021-09-28T02:24:29.592Z</updated>
+    
+    <summary type="html">
+    
+      基本配置（一）
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-页面功能配置（二）</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo/page/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo/page/</id>
+    <published>2021-07-05T03:11:00.000Z</published>
+    <updated>2021-10-08T07:32:46.223Z</updated>
+    
+    <summary type="html">
+    
+      页面功能配置（二）
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-主题更改（三）</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo/theme/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo/theme/</id>
+    <published>2021-07-05T03:10:00.000Z</published>
+    <updated>2021-07-18T09:40:48.979Z</updated>
+    
+    <summary type="html">
+    
+      主题更改（三）
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-Front-matter介绍（四）</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo/front-matter/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo/front-matter/</id>
+    <published>2021-07-05T03:09:00.000Z</published>
+    <updated>2021-10-08T07:31:24.265Z</updated>
+    
+    <summary type="html">
+    
+      Front-matter介绍（四）
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-内置标签（五）</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo/tags/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo/tags/</id>
+    <published>2021-07-05T03:08:00.000Z</published>
+    <updated>2021-10-09T07:50:51.840Z</updated>
+    
+    <summary type="html">
+    
+      内置标签（五）
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bamboo主题-建议（六）</title>
+    <link href="http://tocota.github.io/post/hexo-theme-bamboo/suggest/"/>
+    <id>http://tocota.github.io/post/hexo-theme-bamboo/suggest/</id>
+    <published>2021-07-05T03:07:00.000Z</published>
+    <updated>2021-07-18T09:40:33.625Z</updated>
+    
+    <summary type="html">
+    
+      建议（六）
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
+    
+      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>issues-sites标签</title>
+    <link href="http://tocota.github.io/post/issuessites/"/>
+    <id>http://tocota.github.io/post/issuessites/</id>
+    <published>2021-06-16T03:35:00.000Z</published>
+    <updated>2021-07-18T07:19:12.684Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;该标签会去拿到某个repo仓库的issue内容，用&lt;code&gt;sites标签&lt;/code&gt;的形式显示出来，可以用做网站的&lt;code&gt;友链&lt;/code&gt;功能&lt;br&gt;该标签和&lt;code&gt;issues-timeline&lt;/code&gt;标签都适用于&lt;code&gt;github&lt;/code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>issues-timeline标签</title>
+    <link href="http://tocota.github.io/post/issuestimeline/"/>
+    <id>http://tocota.github.io/post/issuestimeline/</id>
+    <published>2021-06-16T03:35:00.000Z</published>
+    <updated>2021-06-17T02:11:43.946Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;该标签会去拿到某个repo仓库的issue内容，用&lt;code&gt;timeline标签&lt;/code&gt;的形式显示出来&lt;/p&gt;
+&lt;h2 id=&quot;写法&quot;&gt;&lt;a href=&quot;#写法&quot; class=&quot;headerlink&quot; title=&quot;写法&quot;&gt;&lt;/a&gt;写法&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>galleryGroup图片</title>
+    <link href="http://tocota.github.io/post/gallerygroup/"/>
+    <id>http://tocota.github.io/post/gallerygroup/</id>
+    <published>2021-05-10T16:00:00.000Z</published>
+    <updated>2021-05-13T03:51:21.007Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div class=&quot;note
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进度条</title>
+    <link href="http://tocota.github.io/post/progress/"/>
+    <id>http://tocota.github.io/post/progress/</id>
+    <published>2021-02-22T03:35:00.000Z</published>
+    <updated>2021-06-03T06:57:35.637Z</updated>
+    
+    <summary type="html">
+    
+      进度条标签
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>按钮</title>
+    <link href="http://tocota.github.io/post/btn/"/>
+    <id>http://tocota.github.io/post/btn/</id>
+    <published>2021-02-08T03:36:00.000Z</published>
+    <updated>2021-05-12T02:16:08.590Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 class=&quot;bamboo-h &quot; id=&quot;融入段落中按钮&quot;&gt;融入段落中按钮&lt;/h2&gt;&lt;br/&gt;
+&lt;p&gt;不设置任何参数的 &lt;span class=&#39;btn&#39;&gt;&lt;a class=&quot;button&quot; href=&#39;/&#39; title=&#39;按钮&#39;&gt;按钮&lt;/a&gt;&lt;/span&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>audio音频</title>
+    <link href="http://tocota.github.io/post/audio/"/>
+    <id>http://tocota.github.io/post/audio/</id>
+    <published>2021-02-08T03:35:00.000Z</published>
+    <updated>2021-05-11T01:44:42.600Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 class=&quot;bamboo-h &quot; id=&quot;事例&quot;&gt;事例&lt;/h2&gt;&lt;br/&gt;
+
+&lt;div class=&quot;audio&quot;&gt;&lt;audio controls preload&gt;&lt;source
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>checkbox</title>
+    <link href="http://tocota.github.io/post/checkbox/"/>
+    <id>http://tocota.github.io/post/checkbox/</id>
+    <published>2021-02-08T03:35:00.000Z</published>
+    <updated>2021-05-11T01:45:08.369Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 class=&quot;bamboo-h &quot; id=&quot;进度条示例&quot;&gt;进度条示例&lt;/h2&gt;&lt;br/&gt;
+
+&lt;div class=&#39;checkbox&#39;&gt;&lt;input type=&quot;checkbox&quot; /&gt;
+            &lt;p&gt;纯文本测试&lt;/p&gt;
+           
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>folding折叠</title>
+    <link href="http://tocota.github.io/post/folding/"/>
+    <id>http://tocota.github.io/post/folding/</id>
+    <published>2021-02-08T03:35:00.000Z</published>
+    <updated>2021-05-11T01:45:36.721Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;span&gt;&lt;img src=&#39;https://cdn.jsdelivr.net/gh/deepkolos/wechat-emoji/emoji/不屑.png&#39; style=&#39;height:24px&#39;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 class=&quot;bamboo-h &quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gallery图片</title>
+    <link href="http://tocota.github.io/post/gallery/"/>
+    <id>http://tocota.github.io/post/gallery/</id>
+    <published>2021-02-08T03:35:00.000Z</published>
+    <updated>2021-05-11T01:46:04.190Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div class=&quot;note
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github卡片</title>
+    <link href="http://tocota.github.io/post/ghcard/"/>
+    <id>http://tocota.github.io/post/ghcard/</id>
+    <published>2021-02-08T03:35:00.000Z</published>
+    <updated>2021-05-11T01:57:17.503Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 class=&quot;bamboo-h &quot; id=&quot;Github用户卡片&quot;&gt;Github用户卡片&lt;/h2&gt;&lt;br/&gt;
+&lt;a class=&quot;ghcard&quot; rel=&quot;external nofollow noopener noreferrer&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://tocota.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tag" scheme="http://tocota.github.io/tags/tag/"/>
+    
+  </entry>
+  
+</feed>
