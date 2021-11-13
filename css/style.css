@@ -118,7 +118,7 @@ textarea,
   cursor: url(""), zoom-in !important;
 }
 .main {
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 190px);
   box-sizing: border-box;
 }
 .bg-color {
@@ -175,7 +175,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #fff;
 }
 .bg-floor {
-  background: url("https://pic2.zhimg.com/80/v2-a90e3e9f544549e244355039b96bd606_1440w.jpg");
+  background: ;
   background-size: cover;
   transition: all 0.3s;
 }
@@ -1008,7 +1008,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   width: 100%;
   overflow: hidden;
   height: 400px;
-  height: 450px;
   position: relative;
   background-color: #42b983;
   background-size: cover;
@@ -1715,7 +1714,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -1864,7 +1862,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
@@ -2228,7 +2225,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-radius: 10px;
   box-sizing: border-box;
   transition: all 0.3s;
-  background: url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png");
+  background: ;
 }
 .index-notice .index-notice-icon {
   color: #f00;
@@ -2453,7 +2450,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -2673,7 +2669,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
@@ -2796,7 +2791,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
@@ -2925,7 +2919,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -3083,7 +3076,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   position: relative;
   width: 100%;
   height: 50vh;
-  height: 60vh;
   height: 100vh;
   overflow: hidden;
   background-size: cover;

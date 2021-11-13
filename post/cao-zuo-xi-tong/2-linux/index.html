@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html>
+  <!-- meta/link... -->
+  
+
+
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <title>Linux | 小蜜蜂爱搬砖</title>
+
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+  <link href="https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css" rel="stylesheet">
+
+  
+    <script>
+        var themeModelId = '2';
+        if (themeModelId) {
+            localStorage.setItem('modelId', themeModelId);
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+    <script>
+        var live2dOpen = eval('true') || false;
+        if (!live2dOpen) {
+            localStorage.setItem('waifu-display', 1609323474481);
+        }
+    </script>
+  
+  
+  
+<link rel="stylesheet" href="/css/animate.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/shareJs/share.min.css">
+
+  
+  <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+    
+        <script src="/js/valine/av-min@3.0.4.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
+    
+
+    <!-- import link -->
+    
+        
+            
+        
+            
+        
+    
+    <!-- import script -->
+    
+        
+            
+        
+            
+        
+    
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小蜜蜂爱搬砖" type="application/atom+xml">
+</head>
+
+  
+  <!-- 依赖于jquery和vue -->
+  <script src="/js/jquery3.5.1.js"></script>
+  <script src="/js/vue2.6.11.js"></script>
+  
+  <body>
+    <!-- 预加载动画 -->
+    <!-- 页面预加载动画 -->
+
+<div id='loader'>
+  <link rel="stylesheet" href="/js/loaded/index.css" >
+  <div class="loading-left-bg"></div>
+  <div class="loading-right-bg"></div>
+  <div class="spinner-box">
+    <div class="configure-border-1">
+      <div class="configure-core"></div>
+    </div>
+    <div class="configure-border-2">
+      <div class="configure-core"></div>
+    </div>
+    <div class="loading-word">加载中...</div>
+  </div>
+</div>
+
+<script>
+  var endLoading = function () {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('DOMContentLoaded',endLoading);
+  
+</script>
+
+    
+    <!-- 判断是否为暗黑风格 -->
+    <!-- 判断是否为黑夜模式 -->
+<script>
+  let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+
+  if (isDark) {
+    $(document.body).addClass('darkModel');
+  }
+</script>
+
+    <!-- 头部导航等 -->
+    
+<header class="header header-bg-color" id="navHeader"
+  style="position: fixed;
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+  <div class="drawer-box-icon">
+    <i class="fas fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+  </div>
+  
+  <transition name="fade">
+    <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+    </div>
+  </transition>
+  <div class="drawer-box" :class="{'active': visible}">
+    <div class="drawer-box-head bg-color">
+      <img class="drawer-box-head_logo lazyload placeholder" src="/medias/logo.png" class="lazyload placeholder" data-srcset="/medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+      <h3 class="drawer-box-head_title">小蜜蜂爱搬砖</h3>
+      <h5 class="drawer-box-head_desc">千磨万击还坚劲，任尔东西南北风</h5>
+    </div>
+    
+    <div class="drawer-box-content">
+      <ul class="drawer-box-content_menu">
+        
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/archives" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/categories" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/friends" class="drawer-menu-item-link">
+                  
+                  <span class="name">友情链接</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(4)">
+                  <span>
+                    
+                    <span class="name">🐱更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(4)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(4)">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <span>📷图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/huoban">
+                      
+                      <span>👪友情连接</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/me">
+                      
+                      <span>🧒🏻关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                      
+                      <span>🉐百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+        
+          <li class="drawer-box-content_item">
+            <a href="https://tocota.github.io/me/">
+              <i class="fas fa-github" aria-hidden="true"></i>
+              <span>Github</span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDrawer',
+    data: {
+      visible: false,
+      top: 0,
+      openArr: [],
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      isOpen(index) {
+        if (this.openArr.includes(index)) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      openOrCloseMenu(curIndex) {
+        const index = this.openArr.indexOf(curIndex);
+        if (index !== -1) {
+          this.openArr.splice(index, 1);
+        } else {
+          this.openArr.push(curIndex);
+        }
+      },
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%;overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      }
+    },
+    created() {}
+  })
+</script>
+
+    </div>
+    <div class="blog-title" id="author-avatar">
+      
+        <div class="avatar">
+          <img src="/medias/logo.png" class="lazyload placeholder" data-srcset="/medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+        </div>
+      
+      <a href="/" class="logo">小蜜蜂爱搬砖</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/" class="menu-item-link" title="首页">
+                  
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/archives" class="menu-item-link" title="归档">
+                  
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/categories" class="menu-item-link" title="分类">
+                  
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/friends" class="menu-item-link" title="友情链接">
+                  
+                  <span class="name">友情链接</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="🐱更多">
+                  
+                  <span class="name">🐱更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <span>📷图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/huoban">
+                      
+                      <span>👪友情连接</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/me">
+                      
+                      <span>🧒🏻关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                      
+                      <span>🉐百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+      </ul>
+      
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fas fa-search" aria-hidden="true"></i></div>
+  <transition name="fade">
+    <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+      <div class="message-box animated bounceInDown">
+        <h2>
+          <span>
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <span class="title">本地搜索</span>
+          </span>
+          <i class="fas fa-times close" pointer style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i>
+        </h2>
+        <form class="site-search-form">
+          <input type="text"
+            placeholder="请输入关键字"
+            id="local-search-input" 
+            @click="getSearchFile()"
+            class="st-search-input"
+            v-model="searchInput"
+          />
+        </form>
+        <div class="result-wrapper">
+          <div id="local-search-result" class="local-search-result-cls"></div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+<script src="/js/local_search.js"></script>
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+      window.addEventListener('pjax:complete', () => {
+        this.cancelDialogVisible();
+      })
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile("/search.xml");
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+
+    </nav>
+  </div>
+  
+    <a href="https://tocota.github.io/me/" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  
+  
+    <div id="he-plugin-simple"></div>
+    <script>
+      WIDGET = {
+        CONFIG: {
+          "modules": "012",
+          "background": 5,
+          "tmpColor": "4A4A4A",
+          "tmpSize": 16,
+          "cityColor": "4A4A4A",
+          "citySize": 16,
+          "aqiSize": 16,
+          "weatherIconSize": 24,
+          "alertIconSize": 18,
+          "padding": "10px 10px 10px 10px",
+          "shadow": "1",
+          "language": "auto",
+          "borderRadius": 5,
+          "fixed": "false",
+          "vertical": "middle",
+          "horizontal": "center",
+          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
+        }
+      }
+    </script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script> 
+    
+
+    <!-- 当头部导航设置为背景透明的时候  -->
+    
+</header>
+
+    <!-- 需要在上面加载的js -->
+    <script>
+  function loadScript(src, cb) {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        if (cb) {
+          if (JSON.stringify(cb)) {
+            for (let p in cb) {
+              if (p == "onload") {
+                script[p] = () => {
+                  cb[p]()
+                  resolve()
+                }
+              } else {
+                script[p] = cb[p]
+                script.onload = resolve
+              }
+            }
+          } else {
+            script.onload = () => {
+              cb()
+              resolve()
+            };
+          }
+        } else {
+          script.onload = resolve
+        }
+        script.setAttribute("src", src);
+        HEAD.appendChild(script);
+      });
+    });
+  }
+
+  //https://github.com/filamentgroup/loadCSS
+  var loadCSS = function (href, before, media, attributes) {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = src;
+        link.onload = resolve;
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    });
+  };
+
+</script> 
+
+<!-- 轮播图所需要的js -->
+<script src="/js/swiper/swiper.min.js"></script>
+<script src="/js/swiper/vue-awesome-swiper.js"></script>
+<script src="/js/swiper/swiper.animate1.0.3.min.js"></script>
+
+
+  <script src="/js/vue-typed-js/index.js"></script>
+
+
+<!-- 首页的公告滚动插件的js需要重新加载 -->
+<script src="/js/vue-seamless-scroll/index.js"></script>
+
+<!-- 打字机效果js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+    <!-- 内容区域 -->
+    <div id="safearea">
+      <main class="main" id="pjax-container" style="margin-top: 60px;">
+        
+ <!-- prismjs 代码高亮 -->
+ 
+    
+    <link href="/js/prism/prism-line-numbers.css" rel="stylesheet">
+    
+        <link href="/js/prism/prism.min.css" rel="stylesheet">
+    
+
+    <style>
+        pre[class*="language-"] {
+            overflow-y: hidden;
+        }
+        .line-numbers .line-numbers-rows {
+            border: none;
+        }
+    </style>
+  
+
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+<!-- 文章详情页顶部图片和标题 -->
+
+
+
+
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('/medias/4.jpg')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
+  
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        Linux
+      </span>
+    </div>
+    
+    
+      
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> 发表于：2017-02-26 |
+        </span>
+      
+
+      
+        <span class="post-detail-header_categories">
+          <i class="iconfont iconbookmark1"></i> 分类：
+          
+            <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="post-detail-header_category">
+              操作系统
+            </a>
+          
+        </span>
+      
+
+      
+        <div class="post-detail-header_wordcount">
+          <span class="totalcount">
+            <i class="fas fa-file-text-o"></i> 字数统计: 9.5k |
+          </span>
+  
+          <span class="min2read">
+            <i class="fas fa-clock"></i> 阅读时长: 36分钟 |
+          </span>
+  
+          
+            <span class="reading">
+              <i class="fas fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+        </div>
+      
+    
+  </div>
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
+</div>
+
+
+
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <!-- GFM-TOC -->
+<ul>
+<li><a href="#一常用操作以及概念">一、常用操作以及概念</a><ul>
+<li><a href="#快捷键">快捷键</a></li>
+<li><a href="#求助">求助</a></li>
+<li><a href="#关机">关机</a></li>
+<li><a href="#path">PATH</a></li>
+<li><a href="#sudo">sudo</a></li>
+<li><a href="#包管理工具">包管理工具</a></li>
+<li><a href="#发行版">发行版</a></li>
+<li><a href="#vim-三个模式">VIM 三个模式</a></li>
+<li><a href="#gnu">GNU</a></li>
+<li><a href="#开源协议">开源协议</a></li>
+</ul>
+</li>
+<li><a href="#二磁盘">二、磁盘</a><ul>
+<li><a href="#磁盘接口">磁盘接口</a></li>
+<li><a href="#磁盘的文件名">磁盘的文件名</a></li>
+</ul>
+</li>
+<li><a href="#三分区">三、分区</a><ul>
+<li><a href="#分区表">分区表</a></li>
+<li><a href="#开机检测程序">开机检测程序</a></li>
+</ul>
+</li>
+<li><a href="#四文件系统">四、文件系统</a><ul>
+<li><a href="#分区与文件系统">分区与文件系统</a></li>
+<li><a href="#组成">组成</a></li>
+<li><a href="#文件读取">文件读取</a></li>
+<li><a href="#磁盘碎片">磁盘碎片</a></li>
+<li><a href="#block">block</a></li>
+<li><a href="#inode">inode</a></li>
+<li><a href="#目录">目录</a></li>
+<li><a href="#日志">日志</a></li>
+<li><a href="#挂载">挂载</a></li>
+<li><a href="#目录配置">目录配置</a></li>
+</ul>
+</li>
+<li><a href="#五文件">五、文件</a><ul>
+<li><a href="#文件属性">文件属性</a></li>
+<li><a href="#文件与目录的基本操作">文件与目录的基本操作</a></li>
+<li><a href="#修改权限">修改权限</a></li>
+<li><a href="#文件默认权限">文件默认权限</a></li>
+<li><a href="#目录的权限">目录的权限</a></li>
+<li><a href="#链接">链接</a></li>
+<li><a href="#获取文件内容">获取文件内容</a></li>
+<li><a href="#指令与文件搜索">指令与文件搜索</a></li>
+</ul>
+</li>
+<li><a href="#六压缩与打包">六、压缩与打包</a><ul>
+<li><a href="#压缩文件名">压缩文件名</a></li>
+<li><a href="#压缩指令">压缩指令</a></li>
+<li><a href="#打包">打包</a></li>
+</ul>
+</li>
+<li><a href="#七bash">七、Bash</a><ul>
+<li><a href="#特性">特性</a></li>
+<li><a href="#变量操作">变量操作</a></li>
+<li><a href="#指令搜索顺序">指令搜索顺序</a></li>
+<li><a href="#数据流重定向">数据流重定向</a></li>
+</ul>
+</li>
+<li><a href="#八管道指令">八、管道指令</a><ul>
+<li><a href="#提取指令">提取指令</a></li>
+<li><a href="#排序指令">排序指令</a></li>
+<li><a href="#双向输出重定向">双向输出重定向</a></li>
+<li><a href="#字符转换指令">字符转换指令</a></li>
+<li><a href="#分区指令">分区指令</a></li>
+</ul>
+</li>
+<li><a href="#九正则表达式">九、正则表达式</a><ul>
+<li><a href="#grep">grep</a></li>
+<li><a href="#printf">printf</a></li>
+<li><a href="#awk">awk</a></li>
+</ul>
+</li>
+<li><a href="#十进程管理">十、进程管理</a><ul>
+<li><a href="#查看进程">查看进程</a></li>
+<li><a href="#进程状态">进程状态</a></li>
+<li><a href="#sigchld">SIGCHLD</a></li>
+<li><a href="#wait">wait()</a></li>
+<li><a href="#waitpid">waitpid()</a></li>
+<li><a href="#孤儿进程">孤儿进程</a></li>
+<li><a href="#僵尸进程">僵尸进程</a></li>
+</ul>
+</li>
+<li><a href="#参考资料">参考资料</a><!-- GFM-TOC -->
+
+
+</li>
+</ul>
+<h1 id="一、常用操作以及概念"><a href="#一、常用操作以及概念" class="headerlink" title="一、常用操作以及概念"></a>一、常用操作以及概念</h1><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
+<li>Tab：命令和文件名补全；</li>
+<li>Ctrl+C：中断正在运行的程序；</li>
+<li>Ctrl+D：结束键盘输入（End Of File，EOF）</li>
+</ul>
+<h2 id="求助"><a href="#求助" class="headerlink" title="求助"></a>求助</h2><h3 id="1-–help"><a href="#1-–help" class="headerlink" title="1. –help"></a>1. –help</h3><p>指令的基本用法与选项介绍。</p>
+<h3 id="2-man"><a href="#2-man" class="headerlink" title="2. man"></a>2. man</h3><p>man 是 manual 的缩写，将指令的具体信息显示出来。</p>
+<p>当执行<code>man date</code>时，有 DATE(1) 出现，其中的数字代表指令的类型，常用的数字及其类型如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代号</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>用户在 shell 环境中可以操作的指令或者可执行文件</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>配置文件</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td>系统管理员可以使用的管理指令</td>
+</tr>
+</tbody></table>
+<h3 id="3-info"><a href="#3-info" class="headerlink" title="3. info"></a>3. info</h3><p>info 与 man 类似，但是 info 将文档分成一个个页面，每个页面可以进行跳转。</p>
+<h3 id="4-doc"><a href="#4-doc" class="headerlink" title="4. doc"></a>4. doc</h3><p>/usr/share/doc 存放着软件的一整套说明文件。</p>
+<h2 id="关机"><a href="#关机" class="headerlink" title="关机"></a>关机</h2><h3 id="1-who"><a href="#1-who" class="headerlink" title="1. who"></a>1. who</h3><p>在关机前需要先使用 who 命令查看有没有其它用户在线。</p>
+<h3 id="2-sync"><a href="#2-sync" class="headerlink" title="2. sync"></a>2. sync</h3><p>为了加快对磁盘文件的读写速度，位于内存中的文件数据不会立即同步到磁盘上，因此关机之前需要先进行 sync 同步操作。</p>
+<h3 id="3-shutdown"><a href="#3-shutdown" class="headerlink" title="3. shutdown"></a>3. shutdown</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"># shutdown [-krhc] 时间 [信息]
+-k ： 不会关机，只是发送警告信息，通知所有在线的用户
+-r ： 将系统的服务停掉后就重新启动
+-h ： 将系统的服务停掉后就立即关机
+-c ： 取消已经在进行的 shutdown 指令内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="PATH"><a href="#PATH" class="headerlink" title="PATH"></a>PATH</h2><p>可以在环境变量 PATH 中声明可执行文件的路径，路径之间用 : 分隔。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/dmtsai/.local/bin:/home/dmtsai/bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><p>sudo 允许一般用户使用 root 可执行的命令，不过只有在 /etc/sudoers 配置文件中添加的用户才能使用该指令。</p>
+<h2 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h2><p>RPM 和 DPKG 为最常见的两类软件包管理工具：</p>
+<ul>
+<li>RPM 全称为 Redhat Package Manager，最早由 Red Hat 公司制定实施，随后被 GNU 开源操作系统接受并成为很多 Linux 系统 (RHEL) 的既定软件标准。</li>
+<li>与 RPM 进行竞争的是基于 Debian 操作系统 (Ubuntu) 的 DEB 软件包管理工具 DPKG，全称为 Debian Package，功能方面与 RPM 相似。</li>
+</ul>
+<p>YUM 基于 RPM，具有依赖管理功能，并具有软件升级的功能。</p>
+<h2 id="发行版"><a href="#发行版" class="headerlink" title="发行版"></a>发行版</h2><p>Linux 发行版是 Linux 内核及各种应用软件的集成版本。</p>
+<table>
+<thead>
+<tr>
+<th align="center">基于的包管理工具</th>
+<th align="center">商业发行版</th>
+<th align="center">社区发行版</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">RPM</td>
+<td align="center">Red Hat</td>
+<td align="center">Fedora / CentOS</td>
+</tr>
+<tr>
+<td align="center">DPKG</td>
+<td align="center">Ubuntu</td>
+<td align="center">Debian</td>
+</tr>
+</tbody></table>
+<h2 id="VIM-三个模式"><a href="#VIM-三个模式" class="headerlink" title="VIM 三个模式"></a>VIM 三个模式</h2><ul>
+<li>一般指令模式（Command mode）：VIM 的默认模式，可以用于移动游标查看内容；</li>
+<li>编辑模式（Insert mode）：按下 “i” 等按键之后进入，可以对文本进行编辑；</li>
+<li>指令列模式（Bottom-line mode）：按下 “:” 按键之后进入，用于保存退出等操作。</li>
+</ul>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/5942debd-fc00-477a-b390-7c5692cc8070.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/5942debd-fc00-477a-b390-7c5692cc8070.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width="400"/> </div><br>
+
+<p>在指令列模式下，有以下命令用于离开或者保存文件。</p>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">:w</td>
+<td align="center">写入磁盘</td>
+</tr>
+<tr>
+<td align="center">:w!</td>
+<td align="center">当文件为只读时，强制写入磁盘。到底能不能写入，与用户对该文件的权限有关</td>
+</tr>
+<tr>
+<td align="center">:q</td>
+<td align="center">离开</td>
+</tr>
+<tr>
+<td align="center">:q!</td>
+<td align="center">强制离开不保存</td>
+</tr>
+<tr>
+<td align="center">:wq</td>
+<td align="center">写入磁盘后离开</td>
+</tr>
+<tr>
+<td align="center">:wq!</td>
+<td align="center">强制写入磁盘后离开</td>
+</tr>
+</tbody></table>
+<h2 id="GNU"><a href="#GNU" class="headerlink" title="GNU"></a>GNU</h2><p>GNU 计划，译为革奴计划，它的目标是创建一套完全自由的操作系统，称为 GNU，其内容软件完全以 GPL 方式发布。其中 GPL 全称为 GNU 通用公共许可协议，包含了以下内容：</p>
+<ul>
+<li>以任何目的运行此程序的自由；</li>
+<li>再复制的自由；</li>
+<li>改进此程序，并公开发布改进的自由。</li>
+</ul>
+<h2 id="开源协议"><a href="#开源协议" class="headerlink" title="开源协议"></a>开源协议</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://choosealicense.com/">Choose an open source license</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html">如何选择开源许可证？</a></li>
+</ul>
+<h1 id="二、磁盘"><a href="#二、磁盘" class="headerlink" title="二、磁盘"></a>二、磁盘</h1><h2 id="磁盘接口"><a href="#磁盘接口" class="headerlink" title="磁盘接口"></a>磁盘接口</h2><h3 id="1-IDE"><a href="#1-IDE" class="headerlink" title="1. IDE"></a>1. IDE</h3><p>IDE（ATA）全称 Advanced Technology Attachment，接口速度最大为 133MB/s，因为并口线的抗干扰性太差，且排线占用空间较大，不利电脑内部散热，已逐渐被 SATA 所取代。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/924914c0-660c-4e4a-bbc0-1df1146e7516.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/924914c0-660c-4e4a-bbc0-1df1146e7516.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width="400"/> </div><br>
+
+<h3 id="2-SATA"><a href="#2-SATA" class="headerlink" title="2. SATA"></a>2. SATA</h3><p>SATA 全称 Serial ATA，也就是使用串口的 ATA 接口，抗干扰性强，且对数据线的长度要求比 ATA 低很多，支持热插拔等功能。SATA-II 的接口速度为 300MiB/s，而新的 SATA-III 标准可达到 600MiB/s 的传输速度。SATA 的数据线也比 ATA 的细得多，有利于机箱内的空气流通，整理线材也比较方便。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/f9f2a16b-4843-44d1-9759-c745772e9bcf.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/f9f2a16b-4843-44d1-9759-c745772e9bcf.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br>
+
+<h3 id="3-SCSI"><a href="#3-SCSI" class="headerlink" title="3. SCSI"></a>3. SCSI</h3><p>SCSI 全称是 Small Computer System Interface（小型机系统接口），经历多代的发展，从早期的 SCSI-II 到目前的 Ultra320 SCSI 以及 Fiber-Channel（光纤通道），接口型式也多种多样。SCSI 硬盘广为工作站级个人电脑以及服务器所使用，因此会使用较为先进的技术，如碟片转速 15000rpm 的高转速，且传输时 CPU 占用率较低，但是单价也比相同容量的 ATA 及 SATA 硬盘更加昂贵。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/f0574025-c514-49f5-a591-6d6a71f271f7.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/f0574025-c514-49f5-a591-6d6a71f271f7.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br>
+
+<h3 id="4-SAS"><a href="#4-SAS" class="headerlink" title="4. SAS"></a>4. SAS</h3><p>SAS（Serial Attached SCSI）是新一代的 SCSI 技术，和 SATA 硬盘相同，都是采取序列式技术以获得更高的传输速度，可达到 6Gb/s。此外也透过缩小连接线改善系统内部空间等。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/6729baa0-57d7-4817-b3aa-518cbccf824c.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/6729baa0-57d7-4817-b3aa-518cbccf824c.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br>
+
+<h2 id="磁盘的文件名"><a href="#磁盘的文件名" class="headerlink" title="磁盘的文件名"></a>磁盘的文件名</h2><p>Linux 中每个硬件都被当做一个文件，包括磁盘。磁盘以磁盘接口类型进行命名，常见磁盘的文件名如下：</p>
+<ul>
+<li>IDE 磁盘：/dev/hd[a-d]</li>
+<li>SATA/SCSI/SAS 磁盘：/dev/sd[a-p]</li>
+</ul>
+<p>其中文件名后面的序号的确定与系统检测到磁盘的顺序有关，而与磁盘所插入的插槽位置无关。</p>
+<h1 id="三、分区"><a href="#三、分区" class="headerlink" title="三、分区"></a>三、分区</h1><h2 id="分区表"><a href="#分区表" class="headerlink" title="分区表"></a>分区表</h2><p>磁盘分区表主要有两种格式，一种是限制较多的 MBR 分区表，一种是较新且限制较少的 GPT 分区表。</p>
+<h3 id="1-MBR"><a href="#1-MBR" class="headerlink" title="1. MBR"></a>1. MBR</h3><p>MBR 中，第一个扇区最重要，里面有主要开机记录（Master boot record, MBR）及分区表（partition table），其中主要开机记录占 446 bytes，分区表占 64 bytes。</p>
+<p>分区表只有 64 bytes，最多只能存储 4 个分区，这 4 个分区为主分区（Primary）和扩展分区（Extended）。其中扩展分区只有一个，它使用其它扇区用记录额外的分区表，因此通过扩展分区可以分出更多分区，这些分区称为逻辑分区。</p>
+<p>Linux 也把分区当成文件，分区文件的命名方式为：磁盘文件名 + 编号，例如 /dev/sda1。注意，逻辑分区的编号从 5 开始。</p>
+<h3 id="2-GPT"><a href="#2-GPT" class="headerlink" title="2. GPT"></a>2. GPT</h3><p>不同的磁盘有不同的扇区大小，例如 512 bytes 和最新磁盘的 4 k。GPT 为了兼容所有磁盘，在定义扇区上使用逻辑区块地址（Logical Block Address, LBA），LBA 默认大小为 512 bytes。</p>
+<p>GPT 第 1 个区块记录了主要开机记录（MBR），紧接着是 33 个区块记录分区信息，并把最后的 33 个区块用于对分区信息进行备份。这 33 个区块第一个为 GPT 表头纪录，这个部份纪录了分区表本身的位置与大小和备份分区的位置，同时放置了分区表的校验码 (CRC32)，操作系统可以根据这个校验码来判断 GPT 是否正确。若有错误，可以使用备份分区进行恢复。</p>
+<p>GPT 没有扩展分区概念，都是主分区，每个 LAB 可以分 4 个分区，因此总共可以分 4 * 32 = 128 个分区。</p>
+<p>MBR 不支持 2.2 TB 以上的硬盘，GPT 则最多支持到 2<sup>33</sup> TB = 8 ZB。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/GUID_Partition_Table_Scheme.svg.png" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/GUID_Partition_Table_Scheme.svg.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width="400"/> </div><br>
+
+<h2 id="开机检测程序"><a href="#开机检测程序" class="headerlink" title="开机检测程序"></a>开机检测程序</h2><h3 id="1-BIOS"><a href="#1-BIOS" class="headerlink" title="1. BIOS"></a>1. BIOS</h3><p>BIOS（Basic Input/Output System，基本输入输出系统），它是一个固件（嵌入在硬件中的软件），BIOS 程序存放在断电后内容不会丢失的只读内存中。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/50831a6f-2777-46ea-a571-29f23c85cc21.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/50831a6f-2777-46ea-a571-29f23c85cc21.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"/> </div><br>
+
+<p>BIOS 是开机的时候计算机执行的第一个程序，这个程序知道可以开机的磁盘，并读取磁盘第一个扇区的主要开机记录（MBR），由主要开机记录（MBR）执行其中的开机管理程序，这个开机管理程序会加载操作系统的核心文件。</p>
+<p>主要开机记录（MBR）中的开机管理程序提供以下功能：选单、载入核心文件以及转交其它开机管理程序。转交这个功能可以用来实现了多重引导，只需要将另一个操作系统的开机管理程序安装在其它分区的启动扇区上，在启动开机管理程序时，就可以通过选单选择启动当前的操作系统或者转交给其它开机管理程序从而启动另一个操作系统。</p>
+<p>下图中，第一扇区的主要开机记录（MBR）中的开机管理程序提供了两个选单：M1、M2，M1 指向了 Windows 操作系统，而 M2 指向其它分区的启动扇区，里面包含了另外一个开机管理程序，提供了一个指向 Linux 的选单。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/f900f266-a323-42b2-bc43-218fdb8811a8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/f900f266-a323-42b2-bc43-218fdb8811a8.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width="600"/> </div><br>
+
+<p>安装多重引导，最好先安装 Windows 再安装 Linux。因为安装 Windows 时会覆盖掉主要开机记录（MBR），而 Linux 可以选择将开机管理程序安装在主要开机记录（MBR）或者其它分区的启动扇区，并且可以设置开机管理程序的选单。</p>
+<h3 id="2-UEFI"><a href="#2-UEFI" class="headerlink" title="2. UEFI"></a>2. UEFI</h3><p>BIOS 不可以读取 GPT 分区表，而 UEFI 可以。</p>
+<h1 id="四、文件系统"><a href="#四、文件系统" class="headerlink" title="四、文件系统"></a>四、文件系统</h1><h2 id="分区与文件系统"><a href="#分区与文件系统" class="headerlink" title="分区与文件系统"></a>分区与文件系统</h2><p>对分区进行格式化是为了在分区上建立文件系统。一个分区通常只能格式化为一个文件系统，但是磁盘阵列等技术可以将一个分区格式化为多个文件系统。</p>
+<h2 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h2><p>最主要的几个组成部分如下：</p>
+<ul>
+<li>inode：一个文件占用一个 inode，记录文件的属性，同时记录此文件的内容所在的 block 编号；</li>
+<li>block：记录文件的内容，文件太大时，会占用多个 block。</li>
+</ul>
+<p>除此之外还包括：</p>
+<ul>
+<li>superblock：记录文件系统的整体信息，包括 inode 和 block 的总量、使用量、剩余量，以及文件系统的格式与相关信息等；</li>
+<li>block bitmap：记录 block 是否被使用的位域。</li>
+</ul>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/BSD_disk.png" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/BSD_disk.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width="800"/> </div><br>
+
+<h2 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h2><p>对于 Ext2 文件系统，当要读取一个文件的内容时，先在 inode 中去查找文件内容所在的所有 block，然后把所有 block 的内容读出来。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/83185315-793a-453a-a927-5e8d92b5c0ef.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/83185315-793a-453a-a927-5e8d92b5c0ef.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"/> </div><br>
+
+<p>而对于 FAT 文件系统，它没有 inode，每个 block 中存储着下一个 block 的编号。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/075e1977-7846-4928-96c8-bb5b0268693c.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/075e1977-7846-4928-96c8-bb5b0268693c.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"/> </div><br>
+
+<h2 id="磁盘碎片"><a href="#磁盘碎片" class="headerlink" title="磁盘碎片"></a>磁盘碎片</h2><p>指一个文件内容所在的 block 过于分散。</p>
+<h2 id="block"><a href="#block" class="headerlink" title="block"></a>block</h2><p>在 Ext2 文件系统中所支持的 block 大小有 1K，2K 及 4K 三种，不同的大小限制了单个文件和文件系统的最大大小。</p>
+<table>
+<thead>
+<tr>
+<th align="center">大小</th>
+<th align="center">1KB</th>
+<th align="center">2KB</th>
+<th align="center">4KB</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">最大单一文件</td>
+<td align="center">16GB</td>
+<td align="center">256GB</td>
+<td align="center">2TB</td>
+</tr>
+<tr>
+<td align="center">最大文件系统</td>
+<td align="center">2TB</td>
+<td align="center">8TB</td>
+<td align="center">16TB</td>
+</tr>
+</tbody></table>
+<p>一个 block 只能被一个文件所使用，未使用的部分直接浪费了。因此如果需要存储大量的小文件，那么最好选用比较小的 block。</p>
+<h2 id="inode"><a href="#inode" class="headerlink" title="inode"></a>inode</h2><p>inode 具体包含以下信息：</p>
+<ul>
+<li>权限 (read/write/excute)；</li>
+<li>拥有者与群组 (owner/group)；</li>
+<li>容量；</li>
+<li>建立或状态改变的时间 (ctime)；</li>
+<li>最近一次的读取时间 (atime)；</li>
+<li>最近修改的时间 (mtime)；</li>
+<li>定义文件特性的旗标 (flag)，如 SetUID…；</li>
+<li>该文件真正内容的指向 (pointer)。</li>
+</ul>
+<p>inode 具有以下特点：</p>
+<ul>
+<li>每个 inode 大小均固定为 128 bytes (新的 ext4 与 xfs 可设定到 256 bytes)；</li>
+<li>每个文件都仅会占用一个 inode。</li>
+</ul>
+<p>inode 中记录了文件内容所在的 block 编号，但是每个 block 非常小，一个大文件随便都需要几十万的 block。而一个 inode 大小有限，无法直接引用这么多 block 编号。因此引入了间接、双间接、三间接引用。间接引用是指，让 inode 记录的引用 block 块记录引用信息。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/inode_with_signatures.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/inode_with_signatures.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width="600"/> </div><br>
+
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>建立一个目录时，会分配一个 inode 与至少一个 block。block 记录的内容是目录下所有文件的 inode 编号以及文件名。</p>
+<p>可以看出文件的 inode 本身不记录文件名，文件名记录在目录中，因此新增文件、删除文件、更改文件名这些操作与目录的 w 权限有关。</p>
+<h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p>如果突然断电，那么文件系统会发生错误，例如断电前只修改了 block bitmap，而还没有将数据真正写入 block 中。</p>
+<p>ext3/ext4 文件系统引入了日志功能，可以利用日志来修复文件系统。</p>
+<h2 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h2><p>挂载利用目录作为文件系统的进入点，也就是说，进入目录之后就可以读取文件系统的数据。</p>
+<h2 id="目录配置"><a href="#目录配置" class="headerlink" title="目录配置"></a>目录配置</h2><p>为了使不同 Linux 发行版本的目录结构保持一致性，Filesystem Hierarchy Standard (FHS) 规定了 Linux 的目录结构。最基础的三个目录如下：</p>
+<ul>
+<li>/ (root, 根目录)</li>
+<li>/usr (unix software resource)：所有系统默认软件都会安装到这个目录；</li>
+<li>/var (variable)：存放系统或程序运行过程中的数据文件。</li>
+</ul>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/linux-filesystem.png" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/linux-filesystem.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br>
+
+<h1 id="五、文件"><a href="#五、文件" class="headerlink" title="五、文件"></a>五、文件</h1><h2 id="文件属性"><a href="#文件属性" class="headerlink" title="文件属性"></a>文件属性</h2><p>用户分为三种：文件拥有者、群组以及其它人，对不同的用户有不同的文件权限。</p>
+<p>使用 ls 查看一个文件时，会显示一个文件的信息，例如 <code>drwxr-xr-x. 3 root root 17 May 6 00:14 .config</code>，对这个信息的解释如下：</p>
+<ul>
+<li>drwxr-xr-x：文件类型以及权限，第 1 位为文件类型字段，后 9 位为文件权限字段</li>
+<li>3：链接数</li>
+<li>root：文件拥有者</li>
+<li>root：所属群组</li>
+<li>17：文件大小</li>
+<li>May 6 00:14：文件最后被修改的时间</li>
+<li>.config：文件名</li>
+</ul>
+<p>常见的文件类型及其含义有：</p>
+<ul>
+<li>d：目录</li>
+<li>-：文件</li>
+<li>l：链接文件</li>
+</ul>
+<p>9 位的文件权限字段中，每 3 个为一组，共 3 组，每一组分别代表对文件拥有者、所属群组以及其它人的文件权限。一组权限中的 3 位分别为 r、w、x 权限，表示可读、可写、可执行。</p>
+<p>文件时间有以下三种：</p>
+<ul>
+<li>modification time (mtime)：文件的内容更新就会更新；</li>
+<li>status time (ctime)：文件的状态（权限、属性）更新就会更新；</li>
+<li>access time (atime)：读取文件时就会更新。</li>
+</ul>
+<h2 id="文件与目录的基本操作"><a href="#文件与目录的基本操作" class="headerlink" title="文件与目录的基本操作"></a>文件与目录的基本操作</h2><h3 id="1-ls"><a href="#1-ls" class="headerlink" title="1. ls"></a>1. ls</h3><p>列出文件或者目录的信息，目录的信息就是其中包含的文件。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># ls [-aAdfFhilnrRSt] file|dir
+-a ：列出全部的文件
+-d ：仅列出目录本身
+-l ：以长数据串行列出，包含文件的属性与权限等等数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-cd"><a href="#2-cd" class="headerlink" title="2. cd"></a>2. cd</h3><p>更换当前目录。</p>
+<pre class="line-numbers language-none"><code class="language-none">cd [相对路径或绝对路径]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="3-mkdir"><a href="#3-mkdir" class="headerlink" title="3. mkdir"></a>3. mkdir</h3><p>创建目录。</p>
+<pre class="line-numbers language-none"><code class="language-none"># mkdir [-mp] 目录名称
+-m ：配置目录权限
+-p ：递归创建目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="4-rmdir"><a href="#4-rmdir" class="headerlink" title="4. rmdir"></a>4. rmdir</h3><p>删除目录，目录必须为空。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">rmdir [-p] 目录名称
+-p ：递归删除目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="5-touch"><a href="#5-touch" class="headerlink" title="5. touch"></a>5. touch</h3><p>更新文件时间或者建立新文件。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># touch [-acdmt] filename
+-a ： 更新 atime
+-c ： 更新 ctime，若该文件不存在则不建立新文件
+-m ： 更新 mtime
+-d ： 后面可以接更新日期而不使用当前日期，也可以使用 --date="日期或时间"
+-t ： 后面可以接更新时间而不使用当前时间，格式为[YYYYMMDDhhmm]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="6-cp"><a href="#6-cp" class="headerlink" title="6. cp"></a>6. cp</h3><p>复制文件。</p>
+<p>如果源文件有两个以上，则目的文件一定要是目录才行。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">cp [-adfilprsu] source destination
+-a ：相当于 -dr --preserve=all 的意思，至于 dr 请参考下列说明
+-d ：若来源文件为链接文件，则复制链接文件属性而非文件本身
+-i ：若目标文件已经存在时，在覆盖前会先询问
+-p ：连同文件的属性一起复制过去
+-r ：递归持续复制
+-u ：destination 比 source 旧才更新 destination，或 destination 不存在的情况下才复制
+--preserve=all ：除了 -p 的权限相关参数外，还加入 SELinux 的属性, links, xattr 等也复制了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="7-rm"><a href="#7-rm" class="headerlink" title="7. rm"></a>7. rm</h3><p>删除文件。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># rm [-fir] 文件或目录
+-r ：递归删除<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="8-mv"><a href="#8-mv" class="headerlink" title="8. mv"></a>8. mv</h3><p>移动文件。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># mv [-fiu] source destination
+# mv [options] source1 source2 source3 .... directory
+-f ： force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="修改权限"><a href="#修改权限" class="headerlink" title="修改权限"></a>修改权限</h2><p>可以将一组权限用数字来表示，此时一组权限的 3 个位当做二进制数字的位，从左到右每个位的权值为 4、2、1，即每个权限对应的数字权值为 r : 4、w : 2、x : 1。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># chmod [-R] xyz dirname/filename<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>示例：将 .bashrc 文件的权限修改为 -rwxr-xr–。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># chmod 754 .bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>也可以使用符号来设定权限。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># chmod [ugoa]  [+-=] [rwx] dirname/filename
+- u：拥有者
+- g：所属群组
+- o：其他人
+- a：所有人
+- +：添加权限
+- -：移除权限
+- =：设定权限<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>示例：为 .bashrc 文件的所有用户添加写权限。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># chmod a+w .bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="文件默认权限"><a href="#文件默认权限" class="headerlink" title="文件默认权限"></a>文件默认权限</h2><ul>
+<li>文件默认权限：文件默认没有可执行权限，因此为 666，也就是 -rw-rw-rw- 。</li>
+<li>目录默认权限：目录必须要能够进入，也就是必须拥有可执行权限，因此为 777 ，也就是 drwxrwxrwx。</li>
+</ul>
+<p>可以通过 umask 设置或者查看文件的默认权限，通常以掩码的形式来表示，例如 002 表示其它用户的权限去除了一个 2 的权限，也就是写权限，因此建立新文件时默认的权限为 -rw-rw-r–。</p>
+<h2 id="目录的权限"><a href="#目录的权限" class="headerlink" title="目录的权限"></a>目录的权限</h2><p>文件名不是存储在一个文件的内容中，而是存储在一个文件所在的目录中。因此，拥有文件的 w 权限并不能对文件名进行修改。</p>
+<p>目录存储文件列表，一个目录的权限也就是对其文件列表的权限。因此，目录的 r 权限表示可以读取文件列表；w 权限表示可以修改文件列表，具体来说，就是添加删除文件，对文件名进行修改；x 权限可以让该目录成为工作目录，x 权限是 r 和 w 权限的基础，如果不能使一个目录成为工作目录，也就没办法读取文件列表以及对文件列表进行修改了。</p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><pre class="line-numbers language-html" data-language="html"><code class="language-html"># ln [-sf] source_filename dist_filename
+-s ：默认是 hard link，加 -s 为 symbolic link
+-f ：如果目标文件存在时，先删除目标文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/b8081c84-62c4-4019-b3ee-4bd0e443d647.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/b8081c84-62c4-4019-b3ee-4bd0e443d647.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"/> </div><br>
+
+<h3 id="1-实体链接"><a href="#1-实体链接" class="headerlink" title="1. 实体链接"></a>1. 实体链接</h3><p>在目录下创建一个条目，记录着文件名与 inode 编号，这个 inode 就是源文件的 inode。</p>
+<p>删除任意一个条目，文件还是存在，只要引用数量不为 0。</p>
+<p>有以下限制：不能跨越文件系统、不能对目录进行链接。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># ln /etc/crontab .
+# ll -i /etc/crontab crontab
+34474855 -rw-r--r--. 2 root root 451 Jun 10 2014 crontab
+34474855 -rw-r--r--. 2 root root 451 Jun 10 2014 /etc/crontab<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-符号链接"><a href="#2-符号链接" class="headerlink" title="2. 符号链接"></a>2. 符号链接</h3><p>符号链接文件保存着源文件所在的绝对路径，在读取时会定位到源文件上，可以理解为 Windows 的快捷方式。</p>
+<p>当源文件被删除了，链接文件就打不开了。</p>
+<p>可以为目录建立链接。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># ll -i /etc/crontab /root/crontab2
+34474855 -rw-r--r--. 2 root root 451 Jun 10 2014 /etc/crontab
+53745909 lrwxrwxrwx. 1 root root 12 Jun 23 22:31 /root/crontab2 -> /etc/crontab<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="获取文件内容"><a href="#获取文件内容" class="headerlink" title="获取文件内容"></a>获取文件内容</h2><h3 id="1-cat"><a href="#1-cat" class="headerlink" title="1. cat"></a>1. cat</h3><p>取得文件内容。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># cat [-AbEnTv] filename
+-n ：打印出行号，连同空白行也会有行号，-b 不会<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2-tac"><a href="#2-tac" class="headerlink" title="2. tac"></a>2. tac</h3><p>是 cat 的反向操作，从最后一行开始打印。</p>
+<h3 id="3-more"><a href="#3-more" class="headerlink" title="3. more"></a>3. more</h3><p>和 cat 不同的是它可以一页一页查看文件内容，比较适合大文件的查看。</p>
+<h3 id="4-less"><a href="#4-less" class="headerlink" title="4. less"></a>4. less</h3><p>和 more 类似，但是多了一个向前翻页的功能。</p>
+<h3 id="5-head"><a href="#5-head" class="headerlink" title="5. head"></a>5. head</h3><p>取得文件前几行。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># head [-n number] filename
+-n ：后面接数字，代表显示几行的意思<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="6-tail"><a href="#6-tail" class="headerlink" title="6. tail"></a>6. tail</h3><p>是 head 的反向操作，只是取得是后几行。</p>
+<h3 id="7-od"><a href="#7-od" class="headerlink" title="7. od"></a>7. od</h3><p>以字符或者十六进制的形式显示二进制文件。</p>
+<h2 id="指令与文件搜索"><a href="#指令与文件搜索" class="headerlink" title="指令与文件搜索"></a>指令与文件搜索</h2><h3 id="1-which"><a href="#1-which" class="headerlink" title="1. which"></a>1. which</h3><p>指令搜索。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># which [-a] command
+-a ：将所有指令列出，而不是只列第一个<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2-whereis"><a href="#2-whereis" class="headerlink" title="2. whereis"></a>2. whereis</h3><p>文件搜索。速度比较快，因为它只搜索几个特定的目录。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># whereis [-bmsu] dirname/filename<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="3-locate"><a href="#3-locate" class="headerlink" title="3. locate"></a>3. locate</h3><p>文件搜索。可以用关键字或者正则表达式进行搜索。</p>
+<p>locate 使用 /var/lib/mlocate/ 这个数据库来进行搜索，它存储在内存中，并且每天更新一次，所以无法用 locate 搜索新建的文件。可以使用 updatedb 来立即更新数据库。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># locate [-ir] keyword
+-r：正则表达式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="4-find"><a href="#4-find" class="headerlink" title="4. find"></a>4. find</h3><p>文件搜索。可以使用文件的属性和权限进行搜索。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"># find [basedir] [option]
+example: find . -name "shadow*"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>① 与时间有关的选项</strong> </p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">-mtime  n ：列出在 n 天前的那一天修改过内容的文件
+-mtime +n ：列出在 n 天之前 (不含 n 天本身) 修改过内容的文件
+-mtime -n ：列出在 n 天之内 (含 n 天本身) 修改过内容的文件
+-newer file ： 列出比 file 更新的文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>+4、4 和 -4 的指示的时间范围如下：</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/658fc5e7-79c0-4247-9445-d69bf194c539.png" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/658fc5e7-79c0-4247-9445-d69bf194c539.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br>
+
+<p><strong>② 与文件拥有者和所属群组有关的选项</strong> </p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">-uid n
+-gid n
+-user name
+-group name
+-nouser ：搜索拥有者不存在 /etc/passwd 的文件
+-nogroup：搜索所属群组不存在于 /etc/group 的文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>③ 与文件权限和名称有关的选项</strong> </p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">-name filename
+-size [+-]SIZE：搜寻比 SIZE 还要大 (+) 或小 (-) 的文件。这个 SIZE 的规格有：c: 代表 byte，k: 代表 1024bytes。所以，要找比 50KB 还要大的文件，就是 -size +50k
+-type TYPE
+-perm mode  ：搜索权限等于 mode 的文件
+-perm -mode ：搜索权限包含 mode 的文件
+-perm /mode ：搜索权限包含任一 mode 的文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="六、压缩与打包"><a href="#六、压缩与打包" class="headerlink" title="六、压缩与打包"></a>六、压缩与打包</h1><h2 id="压缩文件名"><a href="#压缩文件名" class="headerlink" title="压缩文件名"></a>压缩文件名</h2><p>Linux 底下有很多压缩文件名，常见的如下：</p>
+<table>
+<thead>
+<tr>
+<th>扩展名</th>
+<th>压缩程序</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*.Z</td>
+<td>compress</td>
+</tr>
+<tr>
+<td>*.zip</td>
+<td>zip</td>
+</tr>
+<tr>
+<td>*.gz</td>
+<td>gzip</td>
+</tr>
+<tr>
+<td>*.bz2</td>
+<td>bzip2</td>
+</tr>
+<tr>
+<td>*.xz</td>
+<td>xz</td>
+</tr>
+<tr>
+<td>*.tar</td>
+<td>tar 程序打包的数据，没有经过压缩</td>
+</tr>
+<tr>
+<td>*.tar.gz</td>
+<td>tar 程序打包的文件，经过 gzip 的压缩</td>
+</tr>
+<tr>
+<td>*.tar.bz2</td>
+<td>tar 程序打包的文件，经过 bzip2 的压缩</td>
+</tr>
+<tr>
+<td>*.tar.xz</td>
+<td>tar 程序打包的文件，经过 xz 的压缩</td>
+</tr>
+</tbody></table>
+<h2 id="压缩指令"><a href="#压缩指令" class="headerlink" title="压缩指令"></a>压缩指令</h2><h3 id="1-gzip"><a href="#1-gzip" class="headerlink" title="1. gzip"></a>1. gzip</h3><p>gzip 是 Linux 使用最广的压缩指令，可以解开 compress、zip 与 gzip 所压缩的文件。</p>
+<p>经过 gzip 压缩过，源文件就不存在了。</p>
+<p>有 9 个不同的压缩等级可以使用。</p>
+<p>可以使用 zcat、zmore、zless 来读取压缩文件的内容。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ gzip [-cdtv#] filename
+-c ：将压缩的数据输出到屏幕上
+-d ：解压缩
+-t ：检验压缩文件是否出错
+-v ：显示压缩比等信息
+-# ： # 为数字的意思，代表压缩等级，数字越大压缩比越高，默认为 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-bzip2"><a href="#2-bzip2" class="headerlink" title="2. bzip2"></a>2. bzip2</h3><p>提供比 gzip 更高的压缩比。</p>
+<p>查看命令：bzcat、bzmore、bzless、bzgrep。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ bzip2 [-cdkzv#] filename
+-k ：保留源文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="3-xz"><a href="#3-xz" class="headerlink" title="3. xz"></a>3. xz</h3><p>提供比 bzip2 更佳的压缩比。</p>
+<p>可以看到，gzip、bzip2、xz 的压缩比不断优化。不过要注意的是，压缩比越高，压缩的时间也越长。</p>
+<p>查看命令：xzcat、xzmore、xzless、xzgrep。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ xz [-dtlkc#] filename<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><p>压缩指令只能对一个文件进行压缩，而打包能够将多个文件打包成一个大文件。tar 不仅可以用于打包，也可以使用 gip、bzip2、xz 将打包文件进行压缩。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ tar [-z|-j|-J] [cv] [-f 新建的 tar 文件] filename...  ==打包压缩
+$ tar [-z|-j|-J] [tv] [-f 已有的 tar 文件]              ==查看
+$ tar [-z|-j|-J] [xv] [-f 已有的 tar 文件] [-C 目录]    ==解压缩
+-z ：使用 zip；
+-j ：使用 bzip2；
+-J ：使用 xz；
+-c ：新建打包文件；
+-t ：查看打包文件里面有哪些文件；
+-x ：解打包或解压缩的功能；
+-v ：在压缩/解压缩的过程中，显示正在处理的文件名；
+-f : filename：要处理的文件；
+-C 目录 ： 在特定目录解压缩。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">使用方式</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">打包压缩</td>
+<td>tar -jcv -f filename.tar.bz2 要被压缩的文件或目录名称</td>
+</tr>
+<tr>
+<td align="center">查 看</td>
+<td>tar -jtv -f filename.tar.bz2</td>
+</tr>
+<tr>
+<td align="center">解压缩</td>
+<td>tar -jxv -f filename.tar.bz2 -C 要解压缩的目录</td>
+</tr>
+</tbody></table>
+<h1 id="七、Bash"><a href="#七、Bash" class="headerlink" title="七、Bash"></a>七、Bash</h1><p>可以通过 Shell 请求内核提供服务，Bash 正是 Shell 的一种。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>命令历史：记录使用过的命令</li>
+<li>命令与文件补全：快捷键：tab</li>
+<li>命名别名：例如 lm 是 ls -al 的别名</li>
+<li>shell scripts</li>
+<li>通配符：例如 ls -l /usr/bin/X* 列出 /usr/bin 下面所有以 X 开头的文件</li>
+</ul>
+<h2 id="变量操作"><a href="#变量操作" class="headerlink" title="变量操作"></a>变量操作</h2><p>对一个变量赋值直接使用 =。</p>
+<p>对变量取用需要在变量前加上 $ ，也可以用 ${} 的形式；</p>
+<p>输出变量使用 echo 命令。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token assign-left variable">x</span><span class="token operator">=</span>abc
+$ <span class="token builtin class-name">echo</span> <span class="token variable">$x</span>
+$ <span class="token builtin class-name">echo</span> <span class="token variable">$&#123;x&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>变量内容如果有空格，必须使用双引号或者单引号。</p>
+<ul>
+<li>双引号内的特殊字符可以保留原本特性，例如 x=”lang is $LANG”，则 x 的值为 lang is zh_TW.UTF-8；</li>
+<li>单引号内的特殊字符就是特殊字符本身，例如 x=’lang is $LANG’，则 x 的值为 lang is $LANG。</li>
+</ul>
+<p>可以使用 `指令` 或者 $(指令) 的方式将指令的执行结果赋值给变量。例如 version=$(uname -r)，则 version 的值为 4.15.0-22-generic。</p>
+<p>可以使用 export 命令将自定义变量转成环境变量，环境变量可以在子程序中使用，所谓子程序就是由当前 Bash 而产生的子 Bash。</p>
+<p>Bash 的变量可以声明为数组和整数数字。注意数字类型没有浮点数。如果不进行声明，默认是字符串类型。变量的声明使用 declare 命令：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ declare [-aixr] variable
+-a ： 定义为数组类型
+-i ： 定义为整数类型
+-x ： 定义为环境变量
+-r ： 定义为 readonly 类型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用 [ ] 来对数组进行索引操作：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>a
+$ array<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span>b
+$ <span class="token builtin class-name">echo</span> <span class="token variable">$&#123;array<span class="token punctuation">[</span>1<span class="token punctuation">]</span>&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="指令搜索顺序"><a href="#指令搜索顺序" class="headerlink" title="指令搜索顺序"></a>指令搜索顺序</h2><ul>
+<li>以绝对或相对路径来执行指令，例如 /bin/ls 或者 ./ls ；</li>
+<li>由别名找到该指令来执行；</li>
+<li>由 Bash 内置的指令来执行；</li>
+<li>按 $PATH 变量指定的搜索路径的顺序找到第一个指令来执行。</li>
+</ul>
+<h2 id="数据流重定向"><a href="#数据流重定向" class="headerlink" title="数据流重定向"></a>数据流重定向</h2><p>重定向指的是使用文件代替标准输入、标准输出和标准错误输出。</p>
+<table>
+<thead>
+<tr>
+<th align="center">1</th>
+<th align="center">代码</th>
+<th align="center">运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">标准输入 (stdin)</td>
+<td align="center">0</td>
+<td align="center">&lt; 或 &lt;&lt;</td>
+</tr>
+<tr>
+<td align="center">标准输出 (stdout)</td>
+<td align="center">1</td>
+<td align="center">&gt; 或 &gt;&gt;</td>
+</tr>
+<tr>
+<td align="center">标准错误输出 (stderr)</td>
+<td align="center">2</td>
+<td align="center">2&gt; 或 2&gt;&gt;</td>
+</tr>
+</tbody></table>
+<p>其中，有一个箭头的表示以覆盖的方式重定向，而有两个箭头的表示以追加的方式重定向。</p>
+<p>可以将不需要的标准输出以及标准错误输出重定向到 /dev/null，相当于扔进垃圾箱。</p>
+<p>如果需要将标准输出以及标准错误输出同时重定向到一个文件，需要将某个输出转换为另一个输出，例如 2&gt;&amp;1 表示将标准错误输出转换为标准输出。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">find</span> /home -name .bashrc <span class="token operator">></span> list <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="八、管道指令"><a href="#八、管道指令" class="headerlink" title="八、管道指令"></a>八、管道指令</h1><p>管道是将一个命令的标准输出作为另一个命令的标准输入，在数据需要经过多个步骤的处理之后才能得到我们想要的内容时就可以使用管道。</p>
+<p>在命令之间使用 | 分隔各个管道命令。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ls</span> -al /etc <span class="token operator">|</span> <span class="token function">less</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="提取指令"><a href="#提取指令" class="headerlink" title="提取指令"></a>提取指令</h2><p>cut 对数据进行切分，取出想要的部分。</p>
+<p>切分过程一行一行地进行。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ cut
+-d ：分隔符
+-f ：经过 -d 分隔后，使用 -f n 取出第 n 个区间
+-c ：以字符为单位取出区间<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>示例 1：last 显示登入者的信息，取出用户名。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ last
+root pts/1 192.168.201.101 Sat Feb 7 12:35 still logged in
+root pts/1 192.168.201.101 Fri Feb 6 12:13 - 18:46 (06:33)
+root pts/1 192.168.201.254 Thu Feb 5 22:37 - 23:53 (01:16)
+
+$ last | cut -d ' ' -f 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>示例 2：将 export 输出的信息，取出第 12 字符以后的所有字符串。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ export
+declare -x HISTCONTROL="ignoredups"
+declare -x HISTSIZE="1000"
+declare -x HOME="/home/dmtsai"
+declare -x HOSTNAME="study.centos.vbird"
+.....(其他省略).....
+
+$ export | cut -c 12-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="排序指令"><a href="#排序指令" class="headerlink" title="排序指令"></a>排序指令</h2><p><strong>sort</strong>  用于排序。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ sort [-fbMnrtuk] [file or stdin]
+-f ：忽略大小写
+-b ：忽略最前面的空格
+-M ：以月份的名字来排序，例如 JAN，DEC
+-n ：使用数字
+-r ：反向排序
+-u ：相当于 unique，重复的内容只出现一次
+-t ：分隔符，默认为 tab
+-k ：指定排序的区间<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>示例：/etc/passwd 文件内容以 : 来分隔，要求以第三列进行排序。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ cat /etc/passwd | sort -t ':' -k 3
+root:x:0:0:root:/root:/bin/bash
+dmtsai:x:1000:1000:dmtsai:/home/dmtsai:/bin/bash
+alex:x:1001:1002::/home/alex:/bin/bash
+arod:x:1002:1003::/home/arod:/bin/bash<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>uniq</strong>  可以将重复的数据只取一个。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ uniq [-ic]
+-i ：忽略大小写
+-c ：进行计数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>示例：取得每个人的登录总次数</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ last | cut -d ' ' -f 1 | sort | uniq -c
+1
+6 (unknown
+47 dmtsai
+4 reboot
+7 root
+1 wtmp<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="双向输出重定向"><a href="#双向输出重定向" class="headerlink" title="双向输出重定向"></a>双向输出重定向</h2><p>输出重定向会将输出内容重定向到文件中，而  <strong>tee</strong>  不仅能够完成这个功能，还能保留屏幕上的输出。也就是说，使用 tee 指令，一个输出会同时传送到文件和屏幕上。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ tee [-a] file<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="字符转换指令"><a href="#字符转换指令" class="headerlink" title="字符转换指令"></a>字符转换指令</h2><p><strong>tr</strong>  用来删除一行中的字符，或者对字符进行替换。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ tr [-ds] SET1 ...
+-d ： 删除行中 SET1 这个字符串<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>示例，将 last 输出的信息所有小写转换为大写。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ last | tr '[a-z]' '[A-Z]'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>col</strong>  将 tab 字符转为空格字符。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ col [-xb]
+-x ： 将 tab 键转换成对等的空格键<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>expand</strong>  将 tab 转换一定数量的空格，默认是 8 个。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ expand [-t] file
+-t ：tab 转为空格的数量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>join</strong>  将有相同数据的那一行合并在一起。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ join [-ti12] file1 file2
+-t ：分隔符，默认为空格
+-i ：忽略大小写的差异
+-1 ：第一个文件所用的比较字段
+-2 ：第二个文件所用的比较字段<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>paste</strong>  直接将两行粘贴在一起。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ paste [-d] file1 file2
+-d ：分隔符，默认为 tab<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="分区指令"><a href="#分区指令" class="headerlink" title="分区指令"></a>分区指令</h2><p><strong>split</strong>  将一个文件划分成多个文件。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ split [-bl] file PREFIX
+-b ：以大小来进行分区，可加单位，例如 b, k, m 等
+-l ：以行数来进行分区。
+- PREFIX ：分区文件的前导名称<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="九、正则表达式"><a href="#九、正则表达式" class="headerlink" title="九、正则表达式"></a>九、正则表达式</h1><h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p>g/re/p（globally search a regular expression and print)，使用正则表示式进行全局查找并打印。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ grep [-acinv] [--color=auto] 搜寻字符串 filename
+-c ： 统计个数
+-i ： 忽略大小写
+-n ： 输出行号
+-v ： 反向选择，也就是显示出没有 搜寻字符串 内容的那一行
+--color=auto ：找到的关键字加颜色显示<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>示例：把含有 the 字符串的行提取出来（注意默认会有 –color=auto 选项，因此以下内容在 Linux 中有颜色显示 the 字符串）</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ grep -n 'the' regular_express.txt
+8:I can't finish the test.
+12:the symbol '*' is represented as start.
+15:You are the best is mean you are the no. 1.
+16:The world Happy is the same with "glad".
+18:google is the best tools for search keyword<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>因为 { 和 } 在 shell 是有特殊意义的，因此必须要使用转义字符进行转义。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ grep -n 'go\&#123;2,5\&#125;g' regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="printf"><a href="#printf" class="headerlink" title="printf"></a>printf</h2><p>用于格式化输出。它不属于管道命令，在给 printf 传数据时需要使用 $( ) 形式。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ printf '%10s %5i %5i %5i %8.2f \n' $(cat printf.txt)
+    DmTsai    80    60    92    77.33
+     VBird    75    55    80    70.00
+       Ken    60    90    70    73.33<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h2><p>是由 Alfred Aho，Peter Weinberger, 和 Brian Kernighan 创造，awk 这个名字就是这三个创始人名字的首字母。</p>
+<p>awk 每次处理一行，处理的最小单位是字段，每个字段的命名方式为：$n，n 为字段号，从 1 开始，$0 表示一整行。</p>
+<p>示例：取出最近五个登录用户的用户名和 IP</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ last -n 5
+dmtsai pts/0 192.168.1.100 Tue Jul 14 17:32 still logged in
+dmtsai pts/0 192.168.1.100 Thu Jul 9 23:36 - 02:58 (03:22)
+dmtsai pts/0 192.168.1.100 Thu Jul 9 17:23 - 23:36 (06:12)
+dmtsai pts/0 192.168.1.100 Thu Jul 9 08:02 - 08:17 (00:14)
+dmtsai tty1 Fri May 29 11:55 - 12:11 (00:15)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ last -n 5 | awk '&#123;print $1 "\t" $3&#125;'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>可以根据字段的某些条件进行匹配，例如匹配字段小于某个值的那一行数据。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ awk '条件类型 1 &#123;动作 1&#125; 条件类型 2 &#123;动作 2&#125; ...' filename<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>示例：/etc/passwd 文件第三个字段为 UID，对 UID 小于 10 的数据进行处理。</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">$ cat &#x2F;etc&#x2F;passwd | awk &#39;BEGIN &#123;FS&#x3D;&quot;:&quot;&#125; $3 &lt; 10 &#123;print $1 &quot;\t &quot; $3&#125;&#39;
+root 0
+bin 1
+daemon 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>awk 变量：</p>
+<table>
+<thead>
+<tr>
+<th align="center">变量名称</th>
+<th>代表意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">NF</td>
+<td>每一行拥有的字段总数</td>
+</tr>
+<tr>
+<td align="center">NR</td>
+<td>目前所处理的是第几行数据</td>
+</tr>
+<tr>
+<td align="center">FS</td>
+<td>目前的分隔字符，默认是空格键</td>
+</tr>
+</tbody></table>
+<p>示例：显示正在处理的行号以及每一行有多少字段</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">$ last -n 5 | awk '&#123;print $1 "\t lines: " NR "\t columns: " NF&#125;'
+dmtsai lines: 1 columns: 10
+dmtsai lines: 2 columns: 10
+dmtsai lines: 3 columns: 10
+dmtsai lines: 4 columns: 10
+dmtsai lines: 5 columns: 9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="十、进程管理"><a href="#十、进程管理" class="headerlink" title="十、进程管理"></a>十、进程管理</h1><h2 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h2><h3 id="1-ps"><a href="#1-ps" class="headerlink" title="1. ps"></a>1. ps</h3><p>查看某个时间点的进程信息</p>
+<p>示例一：查看自己的进程</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># ps -l<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>示例二：查看系统所有进程</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># ps aux<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>示例三：查看特定的进程</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># ps aux | grep threadx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="2-pstree"><a href="#2-pstree" class="headerlink" title="2. pstree"></a>2. pstree</h3><p>查看进程树</p>
+<p>示例：查看所有进程树</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># pstree -A<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="3-top"><a href="#3-top" class="headerlink" title="3. top"></a>3. top</h3><p>实时显示进程信息</p>
+<p>示例：两秒钟刷新一次</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># top -d 2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="4-netstat"><a href="#4-netstat" class="headerlink" title="4. netstat"></a>4. netstat</h3><p>查看占用端口的进程</p>
+<p>示例：查看特定端口的进程</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># netstat -anp | grep port<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="进程状态"><a href="#进程状态" class="headerlink" title="进程状态"></a>进程状态</h2><table>
+<thead>
+<tr>
+<th align="center">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">R</td>
+<td>running or runnable (on run queue)</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td>uninterruptible sleep (usually I/O)</td>
+</tr>
+<tr>
+<td align="center">S</td>
+<td>interruptible sleep (waiting for an event to complete)</td>
+</tr>
+<tr>
+<td align="center">Z</td>
+<td>zombie (terminated but not reaped by its parent)</td>
+</tr>
+<tr>
+<td align="center">T</td>
+<td>stopped (either by a job control signal or because it is being traced)</td>
+</tr>
+<tr>
+<td align="center"><br></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/76a49594323247f21c9b3a69945445ee.png" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/76a49594323247f21c9b3a69945445ee.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="SIGCHLD"><a href="#SIGCHLD" class="headerlink" title="SIGCHLD"></a>SIGCHLD</h2><p>当一个子进程改变了它的状态时（停止运行，继续运行或者退出），有两件事会发生在父进程中：</p>
+<ul>
+<li>得到 SIGCHLD 信号；</li>
+<li>waitpid() 或者 wait() 调用会返回。</li>
+</ul>
+<p>其中子进程发送的 SIGCHLD 信号包含了子进程的信息，包含了进程 ID、进程状态、进程使用 CPU 的时间等。</p>
+<p>在子进程退出时，它的进程描述符不会立即释放，这是为了让父进程得到子进程信息，父进程通过 wait() 和 waitpid() 来获得一个已经退出的子进程的信息。</p>
+<div align="center"> <img src="https://gitee.com/MrString/study/raw/master/image/flow.png" class="lazyload placeholder" data-srcset="https://gitee.com/MrString/study/raw/master/image/flow.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" width=""/> </div><br>
+
+<h2 id="wait"><a href="#wait" class="headerlink" title="wait()"></a>wait()</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c">pid_t <span class="token function">wait</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span>status<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>父进程调用 wait() 会一直阻塞，直到收到一个子进程退出的 SIGCHLD 信号，之后 wait() 函数会销毁子进程并返回。</p>
+<p>如果成功，返回被收集的子进程的进程 ID；如果调用进程没有子进程，调用就会失败，此时返回 -1，同时 errno 被置为 ECHILD。</p>
+<p>参数 status 用来保存被收集的子进程退出时的一些状态，如果对这个子进程是如何死掉的毫不在意，只想把这个子进程消灭掉，可以设置这个参数为 NULL。</p>
+<h2 id="waitpid"><a href="#waitpid" class="headerlink" title="waitpid()"></a>waitpid()</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c">pid_t <span class="token function">waitpid</span><span class="token punctuation">(</span>pid_t pid<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>status<span class="token punctuation">,</span> <span class="token keyword">int</span> options<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>作用和 wait() 完全相同，但是多了两个可由用户控制的参数 pid 和 options。</p>
+<p>pid 参数指示一个子进程的 ID，表示只关心这个子进程退出的 SIGCHLD 信号。如果 pid=-1 时，那么和 wait() 作用相同，都是关心所有子进程退出的 SIGCHLD 信号。</p>
+<p>options 参数主要有 WNOHANG 和 WUNTRACED 两个选项，WNOHANG 可以使 waitpid() 调用变成非阻塞的，也就是说它会立即返回，父进程可以继续执行其它任务。</p>
+<h2 id="孤儿进程"><a href="#孤儿进程" class="headerlink" title="孤儿进程"></a>孤儿进程</h2><p>一个父进程退出，而它的一个或多个子进程还在运行，那么这些子进程将成为孤儿进程。</p>
+<p>孤儿进程将被 init 进程（进程号为 1）所收养，并由 init 进程对它们完成状态收集工作。</p>
+<p>由于孤儿进程会被 init 进程收养，所以孤儿进程不会对系统造成危害。</p>
+<h2 id="僵尸进程"><a href="#僵尸进程" class="headerlink" title="僵尸进程"></a>僵尸进程</h2><p>一个子进程的进程描述符在子进程退出时不会释放，只有当父进程通过 wait() 或 waitpid() 获取了子进程信息后才会释放。如果子进程退出，而父进程并没有调用 wait() 或 waitpid()，那么子进程的进程描述符仍然保存在系统中，这种进程称之为僵尸进程。</p>
+<p>僵尸进程通过 ps 命令显示出来的状态为 Z（zombie）。</p>
+<p>系统所能使用的进程号是有限的，如果产生大量僵尸进程，将因为没有可用的进程号而导致系统不能产生新的进程。</p>
+<p>要消灭系统中大量的僵尸进程，只需要将其父进程杀死，此时僵尸进程就会变成孤儿进程，从而被 init 所收养，这样 init 就会释放所有的僵尸进程所占有的资源，从而结束僵尸进程。</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li>鸟哥. 鸟 哥 的 Linux 私 房 菜 基 础 篇 第 三 版[J]. 2009.</li>
+<li><a target="_blank" rel="noopener" href="https://www.ibm.com/developerworks/cn/linux/l-cn-rpmdpkg/index.html">Linux 平台上的软件包管理</a></li>
+<li><a target="_blank" rel="noopener" href="http://liubigbin.github.io/2016/03/11/Linux-%E4%B9%8B%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B%E3%80%81%E5%83%B5%E6%AD%BB%E8%BF%9B%E7%A8%8B%E4%B8%8E%E5%AD%A4%E5%84%BF%E8%BF%9B%E7%A8%8B/">Linux 之守护进程、僵死进程与孤儿进程</a></li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/185899/what-is-the-difference-between-a-symbolic-link-and-a-hard-link">What is the difference between a symbolic link and a hard link?</a></li>
+<li><a target="_blank" rel="noopener" href="https://idea.popcount.org/2012-12-11-linux-process-states/">Linux process states</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/GUID_Partition_Table">GUID Partition Table</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/kevinhg/article/details/7001719">详解 wait 和 waitpid 函数</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/tianlesoftware/article/details/6009110">IDE、SATA、SCSI、SAS、FC、SSD 硬盘类型介绍</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.mpchunter.com/s3000/akai-ib-301s-scsi-interface-for-s2800s3000/">Akai IB-301S SCSI Interface for S2800,S3000</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Parallel_ATA">Parallel ATA</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.thessdreview.com/our-reviews/adata-xpg-sx900-256gb-sata-3-ssd-review-expanded-capacity-and-sandforce-driven-speed/4/">ADATA XPG SX900 256GB SATA 3 SSD Review – Expanded Capacity and SandForce Driven Speed</a></li>
+<li><a target="_blank" rel="noopener" href="https://blogs.cisco.com/datacenter/decoding-ucs-invicta-part-1">Decoding UCS Invicta – Part 1</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A1%AC%E7%9B%98">硬盘</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.differencebetween.info/difference-between-sas-and-sata">Difference between SAS and SATA</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/BIOS">BIOS</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cs.rutgers.edu/~pxk/416/notes/13-fs-studies.html">File system design case studies</a></li>
+<li><a target="_blank" rel="noopener" href="https://classes.soe.ucsc.edu/cmps111/Fall08/proj4.shtml">Programming Project #4</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.cs.ucla.edu/classes/fall14/cs111/scribe/11a/index.html">FILE SYSTEM DESIGN</a></li>
+</ul>
+
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="">
+              操作系统
+            </a>
+          
+        </div>
+        
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>王天文</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/post/cao-zuo-xi-tong/2-linux/" target="_blank" title="Linux">http://tocota.github.io/post/cao-zuo-xi-tong/2-linux/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="/medias/10.jpg" class="lazyload placeholder" data-srcset="/medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+    </div>
+    <a href="/post/ji-suan-ji-wang-luo/1-ji-suan-ji-wang-luo/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> 上一篇:
+        <div class="title-text">计算机网络</div>
+      </div>
+      
+      <!-- <div class="content">
+        
+
+一、概述
+网络的网络
+ISP
+主机之间的通信方式
+电路交换与分组交换
+时延
+计算机网络体系结构*
+
+
+二、物理层
+通
+      </div> -->
+    </a>
+  </div>
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="/medias/3.jpg" class="lazyload placeholder" data-srcset="/medias/3.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+    </div>
+    <a href="/post/cao-zuo-xi-tong/1-ji-suan-ji-cao-zuo-xi-tong/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fas fa-angle-right"></i>
+        <div class="title-text">计算机操作系统</div>
+      </div>
+      <!-- <div class="content">
+        
+
+一、概述
+基本特征
+基本功能
+系统调用
+大内核和微内核
+中断分类
+
+
+二、进程管理
+进程与线程
+进程状态的切换
+进程
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
+
+  <div id="myComment">
+    
+      
+<section id="comments" style="padding: 1em; margin: 15px auto;"
+	class="animated bounceInUp">
+	<div id="vcomment" class="comment"></div>
+</section>
+<style>
+	#comments {
+		background: rgba(255,255,255,0.9);
+	}
+	#veditor {
+		background-image: url('https://img.zcool.cn/community/01a253594c71cfa8012193a329a77f.gif');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-color: rgba(255, 255, 255, 0);
+		resize: vertical;
+	}
+	#veditor:focus{
+		background-position-y: 200px;
+		transition: all 0.2s ease-in-out 0s;
+	}
+	#vcomment .vcards .vcard .vh .vhead .vtag.vvisitor {
+		background-color: #42b983;
+	}
+	.v[data-class=v] .vbtn:active, .v[data-class=v] .vbtn:hover {
+		color: #42b983;
+		border-color: #42b983;
+	}
+	#vcomment .vcards .vcard .vhead .vsys i {
+		display: none;
+	}
+	/* 底部valine链接 */
+	#vcomment .vpower {
+		display: none;
+	}
+	
+	/* 底下注释是修改 名称和邮箱和网址输入框的样式 */
+	/* #vcomment .vheader {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	#vcomment .vheader .vnick {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	}
+
+	#vcomment .vheader .vmail {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	}
+
+	#vcomment .vheader .vlink {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	} */
+
+	img.vimg {
+		transition: all 1s;
+		/* 头像旋转时间为 1s */
+	}
+
+	img.vimg:hover {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+
+	#vcomment .vcards .vcard {
+		padding: 15px 20px 0 20px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+		transition: all .3s
+	}
+
+	#vcomment .vcards .vcard:hover {
+		box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+	}
+
+	#vcomment .vcards .vcard .vh .vcard {
+		border: none;
+		box-shadow: none;
+	}
+</style>
+    
+  </div>
+
+<!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
+  <!-- 文章详情页右侧目录 -->
+
+  <div class="toc-aside">
+    <div class="toc-main">
+      <div class="toc-aside-title">
+        <i class="fas fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
+        
+          <div class="toc-open-close">本文目录</div>
+        
+      </div>
+      <div class="toc-content">
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 手机端目录按钮 -->
+  <div id="toc-mobile-btn">
+    <i class="fas fa-list-ul" aria-hidden="true"></i>
+  </div>
+  <!-- js在scripts目录下的的toc.ejs里面 -->
+  
+
+  <script>
+    function openBtnClickFn () {
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    };
+    openBtnClickFn();
+    document.addEventListener('pjax:complete', function () {
+      openBtnClickFn();
+    })
+    
+  </script>
+
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
+</div>
+
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || 'https://api.btstu.cn/sjbz/api.php,https://pica.zhimg.com/80/v2-9659f2305acb80f25ced33aa980092c1_1440w.jpg,https://pica.zhimg.com/80/v2-292e6340491bd97f9d014d6be3371c04_1440w.jpg';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
+</script>
+
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
+  
+</script>
+
+
+      </main>
+    </div>
+
+    <!-- 页脚 -->
+    
+  
+  <div class="footer bg-color">
+    <div class="footer-main">
+      
+        
+          <div class="link">
+            
+              
+                <a href="https://tocota.github.io/me/" class="social">
+                  
+                    <i class="fas fa-rss" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a href="mailto:wangtianwen90@163.com" class="social">
+                  
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a href="https://tocota.github.io/me/" class="social">
+                  
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=87562485" class="social">
+                  
+                    <i class="fab fa-qq" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+          </div>
+        
+      
+        
+          <div class="footer-copyright">
+            <p>Copyright © 2021 - 2021 <a target="_blank" rel="noopener" href="https://github.com/yuang01">Wang TianWen</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> </p>
+
+          </div>
+        
+      
+        
+          
+            <!-- 不蒜子统计 -->
+            <!-- 不蒜子统计 -->
+<span id="busuanzi_container_site_pv">
+      <i class="fas fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span> 次
+</span>
+<span class="post-meta-divider">|</span>
+<span id="busuanzi_container_site_uv" style='display:none'>
+      <i class="fas fa-users" aria-hidden="true"></i>本站访客数：<span id="busuanzi_value_site_uv"></span> 人
+</span>
+
+          
+        
+      
+        
+          <div class="footer-custom">
+            
+          </div>
+        
+      
+    </div>
+  </div>
+
+
+
+    <!-- 渲染暗黑按钮 -->
+    
+      <div class="dark">
+  <div class="dark-content">
+    <i class="fas fa-moon" aria-hidden="true"></i>
+    <!-- <span>关灯</span> -->
+  </div>
+  
+</div>
+
+<script>
+  $(function() {
+    let isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('false');
+    if (isDark) {
+      $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+          </div>
+          `
+        );
+    }
+    $('.dark').click(function() {
+      if ($(document.body).is('.darkModel')) {
+        $(document.body).removeClass('darkModel');
+        localStorage.setItem('dark', false);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      } else {
+        $(document.body).addClass('darkModel');
+        localStorage.setItem('dark', true);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      }
+    })
+  })
+</script>
+    
+    <!-- 渲染回到顶部按钮 -->
+    
+      <div class="goTop top-btn-color" pointer>
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</div>
+<script src="/js/goTop.js"></script>
+
+    
+    <!-- 渲染左下角音乐播放器 -->
+    
+
+    <!-- 图片放大 -->
+    
+      <script src="/js/fancybox/jquery.fancybox.min.js"></script>
+    
+
+    <!-- 百度解析 -->
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 背景彩带 -->
+    
+
+    <script src="/js/utils/index.js"></script>
+    <script src="/js/app.js" data-pjax></script>
+    
+    <!-- 文章目录所需js -->
+<link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+
+<script>
+  var headerEl = 'h2, h3, h4',  //headers 
+    content = '.post-detail',//文章容器
+    idArr = {};  //标题数组以确定是否增加索引id
+  //add #id
+  var option = {
+    // Where to render the table of contents.
+    tocSelector: '.toc',
+    // Where to grab the headings to build the table of contents.
+    contentSelector: content,
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: headerEl,
+    scrollSmooth: true,
+    scrollSmoothOffset: -80,
+    headingsOffset: -($(window).height() * 0.4 - 45),
+    positionFixedSelector: '.toc-main',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+    activeLinkClass: 'is-active-link',
+    // onClick: function (e) {},
+  }
+  if ($('.toc').length > 0) {
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      tocbot.init(option);
+      mobileTocClick();
+    });
+
+  }
+
+  window.tocScrollFn = function () {
+    return bamboo.throttle(function () {
+      findHeadPosition();
+    }, 100)()
+  }
+  window.addEventListener('scroll', tocScrollFn);
+
+  const findHeadPosition = function (top) {
+    if ($('.toc-list').length <= 0) {
+      return false;
+    }
+    setTimeout(() => {  // or DOMContentLoaded 
+      autoScrollToc();
+    }, 0);
+  }
+
+  const autoScrollToc = function () {
+    const $activeItem = document.querySelector('.is-active-link');
+    const $cardToc = document.querySelector('.toc-content');
+    const activePosition = $activeItem.getBoundingClientRect().top
+    const sidebarScrollTop = $cardToc.scrollTop
+    if (activePosition > (document.documentElement.clientHeight - 100)) {
+      $cardToc.scrollTop = sidebarScrollTop + 150
+    }
+    if (activePosition < 100) {
+      $cardToc.scrollTop = sidebarScrollTop - 150
+    }
+  }
+
+  document.addEventListener('pjax:send', function () {
+    if ($('.toc').length) {
+      tocbot.destroy();
+    }
+  });
+
+  document.addEventListener('pjax:complete', function () {
+    if ($('.toc').length) {
+      tocbot.init(option);
+      mobileTocClick();
+    }
+  });
+  
+  // 手机端toc按钮点击出现目录
+  const mobileTocClick = function () {
+    const $cardTocLayout = document.getElementsByClassName('toc-aside')[0];
+    const $cardToc = $cardTocLayout.getElementsByClassName('toc-content')[0];
+    let right = '45px';
+    if (window.innerWidth >= 551 && window.innerWidth <= 992) {
+      right = '100px'
+    }
+    const mobileToc = {
+      open: () => {
+        $cardTocLayout.style.cssText = 'animation: toc-open .3s; opacity: 1; right: ' + right
+      },
+
+      close: () => {
+        $cardTocLayout.style.animation = 'toc-close .2s'
+        setTimeout(() => {
+          $cardTocLayout.style.cssText = "opacity:''; animation: ''; right: ''"
+        }, 100)
+      }
+    }
+    document.getElementById('toc-mobile-btn').addEventListener('click', () => {
+      if (window.getComputedStyle($cardTocLayout).getPropertyValue('opacity') === '0') mobileToc.open()
+      else mobileToc.close()
+    })
+
+    $cardToc.addEventListener('click', (e) => {
+      if (window.innerWidth < 992) { // 小于992px的时候
+        mobileToc.close()
+      }
+    })
+  }
+</script>
+
+<style>
+  .is-position-fixed {
+    position: sticky !important;
+    top: 74px;
+  }
+
+  .toc-main ul {
+    counter-reset: show-list;
+  }
+
+  .toc-main ul li::before {
+    content: counter(item)".";
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 0;
+  }
+</style> 
+
+<!-- 渲染issues标签里的内容 -->
+<script>
+  function loadIssuesJS() {
+    if ($(".post-detail").find(".issues-api").length == 0) {
+      return;
+    } 
+    loadScript('/js/issues/index.js');
+  };
+  $(function () {
+    loadIssuesJS();
+  });
+  document.addEventListener('pjax:complete', function () {
+    if (typeof IssuesAPI == "undefined") {
+      loadIssuesJS();
+    }
+  })
+</script>
+
+<!-- 输入框打字特效 -->
+<!-- 输入框打字特效 -->
+
+  <script src="/js/activate-power-mode.js"></script>
+  <script>
+    POWERMODE.colorful = true;  // 打开随机颜色特效
+    POWERMODE.shake = false;    // 关闭输入框抖动
+    document.body.addEventListener('input', POWERMODE);//监听打字事件
+  </script>
+
+
+<!-- markdown代码一键复制功能 -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+  <script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+  <script src="/js/clipboard/clipboard.min.js"></script>
+  <div id="appCopy">
+  </div>
+  <script data-pjax>
+    var vm = new Vue({
+      el: '#appCopy',
+      data: {
+      },
+      computed: {
+      },
+      mounted() {
+        const that = this;
+        var copy = '复制';
+        /* code */
+        var initCopyCode = function () {
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="" style="position:absolute;top:0;right:0;z-index:1;">';
+          copyHtml += '<i class="fas fa-copy"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre").not('.gutter pre').wrap("<div class='codeBox' style='position:relative;width:100%;'></div>")
+          $(".post-detail pre").not('.gutter pre').before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+            target: function (trigger) {
+              return trigger.nextElementSibling;
+            }
+          });
+        }
+        initCopyCode();
+        $('.btn-copy').unbind('click').bind('click', function () {
+          doSomething();
+        })
+        $(document).unbind('keypress').bind('keypress', function (e) {
+          if (e.ctrlKey && e.keyCode == 67) {
+            doSomething();
+          }
+        })
+
+        function doSomething() {
+          that.$notify({
+            title: "成功",
+            content: "代码已复制，请遵守相关授权协议。",
+            type: 'success'
+          })
+        }
+      },
+      methods: {
+      },
+      created() { }
+    })
+  </script>
+  
+
+<!-- 图片懒加载 -->
+<script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+<!-- 卡片滚动动画 -->
+   
+
+<!-- 评论所需js -->
+
+  
+    <!-- 弹幕所需的css和js -->
+    
+  <!-- 弹幕插件 -->
+  <link href="/js/danmu/barrager.css" rel="stylesheet">
+  <script src="/js/danmu/jquery.barrager.js"></script>
+
+<!-- 具体js，请前往valine/script.ejs查看 -->
+
+    <script>
+  var requiredFields = '';
+  requiredFields = requiredFields.split(',');
+  comment_el = '.comment';
+  let looperValine = null;
+  load_valine = function () {
+    if ($(comment_el).length) {
+      var valine = new Valine({
+        el: '#vcomment',
+        path: window.location.pathname,
+        notify: false,
+        verify: false,
+        app_id: "",
+        app_key: "",
+        placeholder: "客官，说点什么吧",
+        avatar: "",
+        master: "",   //博主邮箱md5
+        tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+        friends: "",
+        metaPlaceholder: { "nick": "昵称/QQ号", "mail": "邮箱" },
+        requiredFields: requiredFields,
+        enableQQ: true,
+      });
+      function debounce(fn) {
+        var timerID = null
+        return function () {
+          var arg = arguments[0]   //获取事件
+          if (timerID) {
+            clearTimeout(timerID)
+          }
+          timerID = setTimeout(function () {
+            fn(arg)              //事件传入函数
+          }, 200)
+        }
+      }
+      //查询评论 valine.Q('*').limit(7) -- 查询所有，限制7条, 下面的的代码是查询当前页面
+      var themeDanmu = eval('true');
+      var themeLoop = eval('false');
+      var themeLooperTime = '5000' || 5000;
+      var speed = '40' || 20;
+      var isBarrager = true;
+      if (themeDanmu == true) {
+        do_barrager();
+        if ($('.danmuBox').length <= 0) {
+          $('.navbar').append('<div class="danmuBox"><div class="danmuBtn open"><span class="danmuCircle"></span><span class="danmuText">弹幕</span></div></div>');
+        }
+        $('.danmuBtn').on('click', debounce(
+          function () {
+            if ($('.danmuBtn').hasClass('open')) {
+              $('.danmuBtn').removeClass('open')
+              clearInterval(looperValine);
+              $.fn.barrager.removeAll();
+            } else {
+              $('.danmuBtn').addClass("open");
+              do_barrager();
+            }
+          }
+        ))
+      }
+      function do_barrager() {
+        isBarrager && valine.Q(window.location.pathname).find().then(function (comments) {
+          // var num = 0; // 可以记录条数，循环调用的时候只取最新的评论放入弹幕中
+          var run_once = true;
+          var looper_time = themeLooperTime;
+          var total = comments.length;
+          // var looper = null;
+          var index = 0;
+          if (total > 0) {
+            barrager();
+          } else {
+            // 当评论数为0的时候，自动关闭弹幕
+            // $('.danmuBtn').removeClass('open');
+          }
+          function barrager() {
+            if (run_once) {
+              //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+              looperValine = setInterval(barrager, looper_time);
+              run_once = false;
+            }
+            var content = comments[index]._serverData.comment;
+            var email = comments[index]._serverData.mail;
+            var link = comments[index]._serverData.link;
+            var newcontent = content.substring(0, 50).replace(/<[^>]+>/g, "");
+            //发布一个弹幕
+            const item = {
+              img: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=640`, //图片 
+              info: newcontent, //文字 
+              href: link, //链接 
+              close: true, //显示关闭按钮 
+              speed: speed, //延迟,单位秒,默认6 
+              color: '#fff', //颜色,默认白色 
+              old_ie_color: '#000000', //ie低版兼容色,不能与网页背景相同,默认黑色
+            }
+            $('body').barrager(item);
+            //索引自增
+            index++;
+            //所有弹幕发布完毕，清除计时器。
+            if (index == total) {
+              clearInterval(looperValine);
+              if (themeLoop === true) {
+                setTimeout(function () {
+                  do_barrager();
+                }, 5000);
+              } else {
+                $('.danmuBtn').removeClass('open');
+              }
+              return false;
+            }
+
+          }
+        })
+      }
+    }
+  };
+  $(document).ready(load_valine);
+  document.addEventListener('pjax:send', function (e) {
+    
+      $('.danmuBox').length > 0 && $('.danmuBox').remove()
+      looperValine && clearInterval(looperValine);
+      $.fn.barrager.removeAll();
+    
+  })
+  document.addEventListener('pjax:complete', function () {
+    load_valine();
+  });
+</script>
+
+  
+
+
+<!-- 鼠标点击特效 -->
+<!-- 爱心点击 -->
+
+   
+    <script src="/js/cursor/clicklove.js"></script> 
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" data-pjax></script>
+
+
+    <!-- pjax -->
+    
+
+<!-- pjax -->
+
+
+  <script src="/js/pjax@0.2.8/index.js"></script>
+  
+    <!-- 样式位于：source/css/_third-party/pjaxanimate.styl -->
+
+<div class="pjax-animate">
+  
+    <div class="loading-circle"><div id="loader-circle"></div></div>
+    <script>
+      window.ShowLoading = function() {
+        $(".loading-circle").css("display", "block");
+      };
+      window.HideLoading = function() {
+        $(".loading-circle").css("display", "none");
+      }
+    </script>
+  
+	<script>
+    document.addEventListener('pjax:complete', function () {
+      window.HideLoading();
+    })
+    document.addEventListener('pjax:send', function () {
+      window.ShowLoading();
+    })
+    document.addEventListener('pjax:error', function () {
+      window.HideLoading();
+    })
+	</script>
+</div>
+
+  
+
+  <script>
+    var pjax = new Pjax({
+      elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([no-pjax])',   // 拦截正常带链接的 a 标签
+      selectors: ["#pjax-container","title"],                                   // 根据实际需要确认重载区域
+      cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+      timeout: 5000
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+
+    })
+    
+    document.addEventListener('pjax:complete', function () {
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.location.href = e.triggerElement.href;
+    })
+    
+    // 刷新不从顶部开始
+    document.addEventListener("DOMContentLoaded", function () {
+      history.scrollRestoration = 'auto';
+    })
+  </script>
+
+
+
+  </body>
+</html>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>王天文的个人博客</title>
+  <title>小蜜蜂爱搬砖</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tocota.github.io/"/>
-  <updated>2021-10-30T14:23:43.420Z</updated>
+  <updated>2021-11-13T15:35:54.041Z</updated>
   <id>http://tocota.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>新增mermaid</title>
-    <link href="http://tocota.github.io/post/java-zhuan-lan/index/"/>
-    <id>http://tocota.github.io/post/java-zhuan-lan/index/</id>
-    <published>2021-10-09T06:03:20.000Z</published>
-    <updated>2021-10-30T14:23:43.420Z</updated>
+    <title>Intellij IDEA的激活（使用破解补丁永久激活）</title>
+    <link href="http://tocota.github.io/post/ge-chong-gong-ju/idea/"/>
+    <id>http://tocota.github.io/post/ge-chong-gong-ju/idea/</id>
+    <published>2018-07-05T03:07:00.000Z</published>
+    <updated>2021-11-13T15:35:54.041Z</updated>
     
     <summary type="html">
     
@@ -29,30 +29,26 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;支持2.6.5+&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;事例：&quot;&gt;&lt;a href=&quot;#事例：&quot; class=&quot;headerlink&quot; title=&quot;事例：&quot;&gt;&lt;/a&gt;事例：&lt;/h2&gt;&lt;div class=&quot;mermaid&quot;&gt;pie
-
+          &lt;h1 id=&quot;Intellij-IDEA的激活（使用破解补丁永久激活）&quot;&gt;&lt;a href=&quot;#Intellij-IDEA的激活（使用破解补丁永久激活）&quot; class=&quot;headerlink&quot; title=&quot;Intellij
         
       
     
     </summary>
     
     
-      <category term="Java专栏" scheme="http://tocota.github.io/categories/Java%E4%B8%93%E6%A0%8F/"/>
+      <category term="各种工具" scheme="http://tocota.github.io/categories/%E5%90%84%E7%A7%8D%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Java专栏" scheme="http://tocota.github.io/tags/Java%E4%B8%93%E6%A0%8F/"/>
+      <category term="各种工具" scheme="http://tocota.github.io/tags/%E5%90%84%E7%A7%8D%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
-    <title>新增mathjax</title>
-    <link href="http://tocota.github.io/post/gu-piao-zhuan-lan/index/"/>
-    <id>http://tocota.github.io/post/gu-piao-zhuan-lan/index/</id>
-    <published>2021-10-08T06:03:20.000Z</published>
-    <updated>2021-10-30T14:22:22.001Z</updated>
+    <title>Tomcat</title>
+    <link href="http://tocota.github.io/post/kai-yuan-kuang-jia/tomcat/tomcat/"/>
+    <id>http://tocota.github.io/post/kai-yuan-kuang-jia/tomcat/tomcat/</id>
+    <published>2017-06-17T13:14:00.000Z</published>
+    <updated>2021-11-13T15:38:05.026Z</updated>
     
     <summary type="html">
     
@@ -60,21 +56,574 @@
       
         
         
-          &lt;p&gt;在文章中设置&lt;code&gt;mathjax: true&lt;/code&gt;即可&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;需要v2.6.4+版本&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;事例：&quot;&gt;&lt;a href=&quot;#事例：&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;&lt;a href=&quot;#一前言&quot;&gt;一、前言&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#二tomcat顶层结构&quot;&gt;二、Tomcat顶层结构&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#三server&quot;&gt;三、Server&lt;/a&gt;&lt;br&gt;&lt;a
         
       
     
     </summary>
     
     
-      <category term="股票专栏" scheme="http://tocota.github.io/categories/%E8%82%A1%E7%A5%A8%E4%B8%93%E6%A0%8F/"/>
+      <category term="开源框架" scheme="http://tocota.github.io/categories/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
     
     
-      <category term="股票专栏" scheme="http://tocota.github.io/tags/%E8%82%A1%E7%A5%A8%E4%B8%93%E6%A0%8F/"/>
+      <category term="开源框架" scheme="http://tocota.github.io/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Tomcat" scheme="http://tocota.github.io/tags/Tomcat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>4、Redis</title>
+    <link href="http://tocota.github.io/post/sql-nosql/4-redis/"/>
+    <id>http://tocota.github.io/post/sql-nosql/4-redis/</id>
+    <published>2017-04-24T07:37:00.000Z</published>
+    <updated>2021-11-13T15:37:40.789Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一概述&quot;&gt;一、概述&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#二数据类型&quot;&gt;二、数据类型&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#string&quot;&gt;STRING&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="Redis" scheme="http://tocota.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3、MySQL</title>
+    <link href="http://tocota.github.io/post/sql-nosql/3-mysql/"/>
+    <id>http://tocota.github.io/post/sql-nosql/3-mysql/</id>
+    <published>2017-04-20T17:21:00.000Z</published>
+    <updated>2021-11-06T05:02:56.047Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一索引&quot;&gt;一、索引&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#b-tree-原理&quot;&gt;B+ Tree 原理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mysql-索引&quot;&gt;MySQL
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="http://tocota.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2、SQL 基本语法</title>
+    <link href="http://tocota.github.io/post/sql-nosql/2-sql-ji-ben-yu-fa/"/>
+    <id>http://tocota.github.io/post/sql-nosql/2-sql-ji-ben-yu-fa/</id>
+    <published>2017-04-19T12:10:00.000Z</published>
+    <updated>2021-11-04T15:06:12.392Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一基础&quot;&gt;一、基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#二创建表&quot;&gt;二、创建表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#三修改表&quot;&gt;三、修改表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="SQL 基本语法" scheme="http://tocota.github.io/tags/SQL-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1、数据库系统原理</title>
+    <link href="http://tocota.github.io/post/sql-nosql/1-shu-ju-ku-xi-tong-yuan-li/"/>
+    <id>http://tocota.github.io/post/sql-nosql/1-shu-ju-ku-xi-tong-yuan-li/</id>
+    <published>2017-04-16T11:37:00.000Z</published>
+    <updated>2021-11-06T05:03:00.224Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一事务&quot;&gt;一、事务&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#概念&quot;&gt;概念&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#acid&quot;&gt;ACID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://tocota.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="数据库系统原理" scheme="http://tocota.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>6、Java 其它知识点</title>
+    <link href="http://tocota.github.io/post/java-zhuan-lan/6-java-qi-ta-zhi-shi-dian/"/>
+    <id>http://tocota.github.io/post/java-zhuan-lan/6-java-qi-ta-zhi-shi-dian/</id>
+    <published>2017-04-07T12:27:00.000Z</published>
+    <updated>2021-11-13T15:37:34.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一三大特性&quot;&gt;一、三大特性&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#封装&quot;&gt;封装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#继承&quot;&gt;继承&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/tags/Java/"/>
+    
+      <category term="Java 其它知识点" scheme="http://tocota.github.io/tags/Java-%E5%85%B6%E5%AE%83%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5、Java 并发</title>
+    <link href="http://tocota.github.io/post/java-zhuan-lan/5-java-bing-fa/"/>
+    <id>http://tocota.github.io/post/java-zhuan-lan/5-java-bing-fa/</id>
+    <published>2017-04-04T11:20:00.000Z</published>
+    <updated>2021-11-13T15:37:29.887Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一线程状态转换&quot;&gt;一、线程状态转换&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#新建new&quot;&gt;新建（New）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/tags/Java/"/>
+    
+      <category term="Java 并发" scheme="http://tocota.github.io/tags/Java-%E5%B9%B6%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>4、Java JVM</title>
+    <link href="http://tocota.github.io/post/java-zhuan-lan/4-java-jvm/"/>
+    <id>http://tocota.github.io/post/java-zhuan-lan/4-java-jvm/</id>
+    <published>2017-03-30T14:27:00.000Z</published>
+    <updated>2021-11-13T15:37:25.213Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一运行时数据区域&quot;&gt;一、运行时数据区域&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#程序计数器&quot;&gt;程序计数器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#java-虚拟机栈&quot;&gt;Java
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/tags/Java/"/>
+    
+      <category term="Java JVM" scheme="http://tocota.github.io/tags/Java-JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3、Java IO</title>
+    <link href="http://tocota.github.io/post/java-zhuan-lan/3-java-io/"/>
+    <id>http://tocota.github.io/post/java-zhuan-lan/3-java-io/</id>
+    <published>2017-03-28T13:06:00.000Z</published>
+    <updated>2021-11-13T15:37:20.265Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一概览&quot;&gt;一、概览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#二磁盘操作&quot;&gt;二、磁盘操作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#三字节操作&quot;&gt;三、字节操作&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/tags/Java/"/>
+    
+      <category term="Java IO" scheme="http://tocota.github.io/tags/Java-IO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2、Java集合</title>
+    <link href="http://tocota.github.io/post/java-zhuan-lan/2-java-ji-he/"/>
+    <id>http://tocota.github.io/post/java-zhuan-lan/2-java-ji-he/</id>
+    <published>2017-03-26T11:34:00.000Z</published>
+    <updated>2021-11-13T15:37:16.160Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一概览&quot;&gt;一、概览&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#collection&quot;&gt;Collection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/tags/Java/"/>
+    
+      <category term="Java 集合" scheme="http://tocota.github.io/tags/Java-%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1、Java基础</title>
+    <link href="http://tocota.github.io/post/java-zhuan-lan/1-java-ji-chu/"/>
+    <id>http://tocota.github.io/post/java-zhuan-lan/1-java-ji-chu/</id>
+    <published>2017-03-24T12:16:00.000Z</published>
+    <updated>2021-11-13T15:37:11.990Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一数据类型&quot;&gt;一、数据类型&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#包装类型&quot;&gt;包装类型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://tocota.github.io/tags/Java/"/>
+    
+      <category term="Java 基础" scheme="http://tocota.github.io/tags/Java-%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Socket</title>
+    <link href="http://tocota.github.io/post/ji-suan-ji-wang-luo/3-socket/"/>
+    <id>http://tocota.github.io/post/ji-suan-ji-wang-luo/3-socket/</id>
+    <published>2017-03-20T13:03:00.000Z</published>
+    <updated>2021-11-06T05:03:24.359Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一io-模型&quot;&gt;一、I/O 模型&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#阻塞式-io&quot;&gt;阻塞式 I/O&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#非阻塞式-io&quot;&gt;非阻塞式
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://tocota.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="http://tocota.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="Socket" scheme="http://tocota.github.io/tags/Socket/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP协议</title>
+    <link href="http://tocota.github.io/post/ji-suan-ji-wang-luo/2-http-xie-yi/"/>
+    <id>http://tocota.github.io/post/ji-suan-ji-wang-luo/2-http-xie-yi/</id>
+    <published>2017-03-17T11:58:00.000Z</published>
+    <updated>2021-11-06T05:03:25.377Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一-基础概念&quot;&gt;一 、基础概念&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#url&quot;&gt;URL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://tocota.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="http://tocota.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="HTTP协议" scheme="http://tocota.github.io/tags/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络</title>
+    <link href="http://tocota.github.io/post/ji-suan-ji-wang-luo/1-ji-suan-ji-wang-luo/"/>
+    <id>http://tocota.github.io/post/ji-suan-ji-wang-luo/1-ji-suan-ji-wang-luo/</id>
+    <published>2017-03-13T12:35:00.000Z</published>
+    <updated>2021-11-06T05:03:26.303Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一概述&quot;&gt;一、概述&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#网络的网络&quot;&gt;网络的网络&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#isp&quot;&gt;ISP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://tocota.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="http://tocota.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="计算机网络" scheme="http://tocota.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://tocota.github.io/post/cao-zuo-xi-tong/2-linux/"/>
+    <id>http://tocota.github.io/post/cao-zuo-xi-tong/2-linux/</id>
+    <published>2017-02-26T01:19:00.000Z</published>
+    <updated>2021-11-13T15:35:46.491Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一常用操作以及概念&quot;&gt;一、常用操作以及概念&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#快捷键&quot;&gt;快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#求助&quot;&gt;求助&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://tocota.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="http://tocota.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机操作系统</title>
+    <link href="http://tocota.github.io/post/cao-zuo-xi-tong/1-ji-suan-ji-cao-zuo-xi-tong/"/>
+    <id>http://tocota.github.io/post/cao-zuo-xi-tong/1-ji-suan-ji-cao-zuo-xi-tong/</id>
+    <published>2017-02-20T11:11:00.000Z</published>
+    <updated>2021-11-13T15:35:40.789Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- GFM-TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#一概述&quot;&gt;一、概述&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#基本特征&quot;&gt;基本特征&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#基本功能&quot;&gt;基本功能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://tocota.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="http://tocota.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>K线图基础知识（一）</title>
+    <link href="http://tocota.github.io/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-yi/"/>
+    <id>http://tocota.github.io/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-yi/</id>
+    <published>2017-01-21T18:11:00.000Z</published>
+    <updated>2021-11-13T15:36:24.757Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1、K线概述&quot;&gt;&lt;a href=&quot;#1、K线概述&quot; class=&quot;headerlink&quot; title=&quot;1、K线概述&quot;&gt;&lt;/a&gt;1、K线概述&lt;/h1&gt;&lt;h2 id=&quot;1-1、k线的历史&quot;&gt;&lt;a href=&quot;#1-1、k线的历史&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="http://tocota.github.io/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+    
+      <category term="股票" scheme="http://tocota.github.io/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+      <category term="K线" scheme="http://tocota.github.io/tags/K%E7%BA%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>K线图基础知识（二）</title>
+    <link href="http://tocota.github.io/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-er/"/>
+    <id>http://tocota.github.io/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-er/</id>
+    <published>2017-01-21T18:11:00.000Z</published>
+    <updated>2021-11-13T15:36:35.934Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;K线组合（一）&quot;&gt;&lt;a href=&quot;#K线组合（一）&quot; class=&quot;headerlink&quot; title=&quot;K线组合（一）&quot;&gt;&lt;/a&gt;K线组合（一）&lt;/h1&gt;&lt;h1 id=&quot;1、-看跌吞没形态&quot;&gt;&lt;a href=&quot;#1、-看跌吞没形态&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="http://tocota.github.io/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+    
+      <category term="股票" scheme="http://tocota.github.io/tags/%E8%82%A1%E7%A5%A8/"/>
     
   </entry>
   
@@ -82,8 +631,8 @@
     <title>Bamboo主题-首页新增侧边栏</title>
     <link href="http://tocota.github.io/post/bamboo-zhuan-lan/sidebar/"/>
     <id>http://tocota.github.io/post/bamboo-zhuan-lan/sidebar/</id>
-    <published>2021-09-28T03:11:00.000Z</published>
-    <updated>2021-10-30T15:19:25.309Z</updated>
+    <published>2007-09-28T03:11:00.000Z</published>
+    <updated>2021-11-13T15:30:29.285Z</updated>
     
     <summary type="html">
     
@@ -98,121 +647,6 @@
       <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
     
       <category term="sidebar" scheme="http://tocota.github.io/tags/sidebar/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bamboo主题-页面功能配置（二）</title>
-    <link href="http://tocota.github.io/post/bamboo-zhuan-lan/page/"/>
-    <id>http://tocota.github.io/post/bamboo-zhuan-lan/page/</id>
-    <published>2021-07-05T03:11:00.000Z</published>
-    <updated>2021-10-30T14:25:32.845Z</updated>
-    
-    <summary type="html">
-    
-      页面功能配置（二）
-    
-    </summary>
-    
-    
-      <category term="Bamboo专栏" scheme="http://tocota.github.io/categories/Bamboo%E4%B8%93%E6%A0%8F/"/>
-    
-    
-      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
-    
-      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bamboo主题-主题更改（三）</title>
-    <link href="http://tocota.github.io/post/bamboo-zhuan-lan/theme/"/>
-    <id>http://tocota.github.io/post/bamboo-zhuan-lan/theme/</id>
-    <published>2021-07-05T03:10:00.000Z</published>
-    <updated>2021-10-30T14:25:43.669Z</updated>
-    
-    <summary type="html">
-    
-      主题更改（三）
-    
-    </summary>
-    
-    
-      <category term="Bamboo专栏" scheme="http://tocota.github.io/categories/Bamboo%E4%B8%93%E6%A0%8F/"/>
-    
-    
-      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
-    
-      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bamboo主题-Front-matter介绍（四）</title>
-    <link href="http://tocota.github.io/post/bamboo-zhuan-lan/front-matter/"/>
-    <id>http://tocota.github.io/post/bamboo-zhuan-lan/front-matter/</id>
-    <published>2021-07-05T03:09:00.000Z</published>
-    <updated>2021-10-30T14:25:30.549Z</updated>
-    
-    <summary type="html">
-    
-      Front-matter介绍（四）
-    
-    </summary>
-    
-    
-      <category term="Bamboo专栏" scheme="http://tocota.github.io/categories/Bamboo%E4%B8%93%E6%A0%8F/"/>
-    
-    
-      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
-    
-      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bamboo主题-内置标签（五）</title>
-    <link href="http://tocota.github.io/post/bamboo-zhuan-lan/tags/"/>
-    <id>http://tocota.github.io/post/bamboo-zhuan-lan/tags/</id>
-    <published>2021-07-05T03:08:00.000Z</published>
-    <updated>2021-10-30T14:25:40.203Z</updated>
-    
-    <summary type="html">
-    
-      内置标签（五）
-    
-    </summary>
-    
-    
-      <category term="Bamboo专栏" scheme="http://tocota.github.io/categories/Bamboo%E4%B8%93%E6%A0%8F/"/>
-    
-    
-      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
-    
-      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bamboo主题-建议（六）</title>
-    <link href="http://tocota.github.io/post/bamboo-zhuan-lan/suggest/"/>
-    <id>http://tocota.github.io/post/bamboo-zhuan-lan/suggest/</id>
-    <published>2021-07-05T03:07:00.000Z</published>
-    <updated>2021-10-30T14:25:37.723Z</updated>
-    
-    <summary type="html">
-    
-      建议（六）
-    
-    </summary>
-    
-    
-      <category term="Bamboo专栏" scheme="http://tocota.github.io/categories/Bamboo%E4%B8%93%E6%A0%8F/"/>
-    
-    
-      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
-    
-      <category term="hexo-theme-bamboo" scheme="http://tocota.github.io/tags/hexo-theme-bamboo/"/>
     
   </entry>
   
