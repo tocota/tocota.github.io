@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tocota.github.io/"/>
-  <updated>2021-11-13T15:35:54.041Z</updated>
+  <updated>2021-11-14T15:19:12.532Z</updated>
   <id>http://tocota.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>团队管理、团队人员技术培养的思考</title>
+    <link href="http://tocota.github.io/post/tuan-dui-guan-li/tuan-dui-ren-yuan-ji-zhu-pei-yang/"/>
+    <id>http://tocota.github.io/post/tuan-dui-guan-li/tuan-dui-ren-yuan-ji-zhu-pei-yang/</id>
+    <published>2021-11-14T15:14:00.000Z</published>
+    <updated>2021-11-14T15:19:12.532Z</updated>
+    
+    <summary type="html">
+    
+      团队管理、团队人员技术培养的思考
+    
+    </summary>
+    
+    
+      <category term="团队管理" scheme="http://tocota.github.io/categories/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="团队管理" scheme="http://tocota.github.io/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="团队人员技术培养" scheme="http://tocota.github.io/tags/%E5%9B%A2%E9%98%9F%E4%BA%BA%E5%91%98%E6%8A%80%E6%9C%AF%E5%9F%B9%E5%85%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Intellij IDEA的激活（使用破解补丁永久激活）</title>
@@ -624,29 +647,6 @@
     
     
       <category term="股票" scheme="http://tocota.github.io/tags/%E8%82%A1%E7%A5%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bamboo主题-首页新增侧边栏</title>
-    <link href="http://tocota.github.io/post/bamboo-zhuan-lan/sidebar/"/>
-    <id>http://tocota.github.io/post/bamboo-zhuan-lan/sidebar/</id>
-    <published>2007-09-28T03:11:00.000Z</published>
-    <updated>2021-11-13T15:30:29.285Z</updated>
-    
-    <summary type="html">
-    
-      首页新增侧边栏
-    
-    </summary>
-    
-    
-      <category term="Bamboo专栏" scheme="http://tocota.github.io/categories/Bamboo%E4%B8%93%E6%A0%8F/"/>
-    
-    
-      <category term="Hexo" scheme="http://tocota.github.io/tags/Hexo/"/>
-    
-      <category term="sidebar" scheme="http://tocota.github.io/tags/sidebar/"/>
     
   </entry>
   

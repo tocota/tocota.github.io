@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>归档 | 小蜜蜂爱搬砖</title>
+  <title>团队管理、团队人员技术培养的思考 | 小蜜蜂爱搬砖</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -585,280 +585,506 @@
     <!-- 内容区域 -->
     <div id="safearea">
       <main class="main" id="pjax-container" style="margin-top: 60px;">
-        <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<div class="bg-light-floor-archive" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
-<div class="archive-header" style="background-image:url('https://pic2.zhimg.com/80/v2-b561c5b432183290eff81f2035501e88_1440w.jpg')">
-  <div class="archive-header-title">
-    archive
-  </div>
-  <div class="archive-header-desc">
+        
+ <!-- prismjs 代码高亮 -->
+ 
+    
+    <link href="/js/prism/prism-line-numbers.css" rel="stylesheet">
+    
+        <link href="/js/prism/prism.min.css" rel="stylesheet">
+    
+
+    <style>
+        pre[class*="language-"] {
+            overflow-y: hidden;
+        }
+        .line-numbers .line-numbers-rows {
+            border: none;
+        }
+    </style>
   
-  <span class="title" id="archive-header-desc"></span>
+
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+<!-- 文章详情页顶部图片和标题 -->
+
+
+
+
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('https://w.wallhaven.cc/full/48/wallhaven-48yppo.jpg')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
+  
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        团队管理、团队人员技术培养的思考
+      </span>
+    </div>
+    
+    
+      
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> 发表于：2021-11-14 |
+        </span>
+      
+
+      
+        <span class="post-detail-header_categories">
+          <i class="iconfont iconbookmark1"></i> 分类：
+          
+            <a href="/categories/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/" class="post-detail-header_category">
+              团队管理
+            </a>
+          
+        </span>
+      
+
+      
+        <div class="post-detail-header_wordcount">
+          <span class="totalcount">
+            <i class="fas fa-file-text-o"></i> 字数统计: 2.1k |
+          </span>
+  
+          <span class="min2read">
+            <i class="fas fa-clock"></i> 阅读时长: 7分钟 |
+          </span>
+  
+          
+            <span class="reading">
+              <i class="fas fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+        </div>
+      
+    
+  </div>
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
+</div>
+
+
+
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <h2 id="1、工作感想"><a href="#1、工作感想" class="headerlink" title="1、工作感想"></a>1、工作感想</h2><p>从参加工作以来，带领的团队有3个人的、5个人的，最多的时候是一个部门12个人。<br>团队成员包括前端、后端、测试及由于项目周期借调的部门同事等。<br>自我评价，我觉得之前工作中项目团队的管理工作说不上多好，但是整体的团队氛围还是不错的，凝聚力也比较强。<br>对于一个员工来说“谋生计以养家”固然重要，但有时跟着一个领导干，钱多不多是一回事，“干得爽”也同样重要。<br>看了一些书，参加过之前公司的一些培训，也在和领导打交道的时候从你们或其他人身上去学习一些有用的点。<br>很多东西也是靠自己慢慢去总结，下面列举的也是一些自己的想法和工作中的小事，也不是讲管理的道理，想到哪写到哪。</p>
+<h2 id="2、思考及建议"><a href="#2、思考及建议" class="headerlink" title="2、思考及建议"></a>2、思考及建议</h2><h3 id="2-1了解同事，最好能成为朋友"><a href="#2-1了解同事，最好能成为朋友" class="headerlink" title="2.1了解同事，最好能成为朋友"></a>2.1了解同事，最好能成为朋友</h3><p>这边我就举我目前的项目成员夏某某的例子，夏某某进入公司比我早，之前在外地工作年头、项目经验也比较充足。<br>组建项目小组，他虽然挂在我的下面，但是我没觉得自己比他厉害多少，对于工作上的事情，大体上是讨论一个方案，然后交由他按照自己的方式去做，对于他这个模块我能不管就不管，只是在代码提交事后进行相应的审查。<br>因为了解他的工作背景，在工作中建立信任，所以一个基本的情况心中就有数，因为信任所以简单。<br>在部门及团队中我们更应该去了解每一个同事，多沟通他们的想法，可能他们也有想去主动承担的事情。<br>只有了解全面了，才能挑出那些渴望成长、渴望承担的靠谱同事。<br>另外，我始终认为，大家共事一场，不论长短，能聚在一起是一种缘分，最好大家是能成为朋友，比同事的关系能更深一些。<br>这个圈子说大不大，说小不小，将来指不定在项目合作中谁能拉谁一把。</p>
+<h3 id="2-2管好大事、适当包容"><a href="#2-2管好大事、适当包容" class="headerlink" title="2.2管好大事、适当包容"></a>2.2管好大事、适当包容</h3><p>对于项目成员或下属的信任，并不代表就是放任不管、当甩手掌柜。<br>重要的事情还是需要自己去跟进，比如版本的重大发布、技术框架组件的更新。<br>组长会像我反映他们的诉求和困难，我帮忙解决或争取公司相关资源来解决问题。<br>以一个领导的立场，如果我的下属出现了生产故障，绩效扣罚，在能力范围之内，我可以扛这个责任。<br>对待自己的下属同事犯错，适当包容，每个人成长的过程中都会犯错。<br>每一个下属应该都会喜欢“护犊子”的领导，至少相对于我的下属来说，我应该更抗压一点。<br>部门工作对外时应该强势一点，对外扛责任，对内可以关起门“教育”。</p>
+<h3 id="2-3提高领导力"><a href="#2-3提高领导力" class="headerlink" title="2.3提高领导力"></a>2.3提高领导力</h3><p>对于领导的服从，不是靠称呼 “您”、“领导”、“XX总”，员工在心中的认可，才能更好的互相配合做好事情。<br>不管我是担任组长、还是项目经理，对于管理工作其实都不是靠大声说话拍桌子瞪眼，真正的威严应该是“不怒而威”。<br>培养他人、赋能他人、成就他人。<br>管理工作不单要用好权力、更要注重自己的领导力。</p>
+<h2 id="3、技术培养规划"><a href="#3、技术培养规划" class="headerlink" title="3、技术培养规划"></a>3、技术培养规划</h2><p>团队同事技术、业务水平参差不齐这在每个团队都是属于正常现象，技术培养，一是避免基本的错误、低级盲区，二是有效实现团队成员人员互备，避免单员工岗位依赖性过重，团队低效运转。<br>提升团队整体水平，促进团队成员及员工的成长。<br>团队培养包括很多个方面，我主要针对于以下三个方面提出自己的一些想法。</p>
+<h3 id="3-1技术能力的培养"><a href="#3-1技术能力的培养" class="headerlink" title="3.1技术能力的培养"></a>3.1技术能力的培养</h3><p>针对于团队人员技术能力的培养，先要“识人”，再培养人。<br>根据部门当前团队成员的技术能力层次，综合考虑相应的培训内容，由简至难，由浅至深。<br>对于初级人员（刚入职的同事或者刚毕业的实习生）需要时长对其代码进行评审，在工作中加强其对于需求分析的指导，其负责开发功能进度的把控和跟进。<br>让其摆脱恐惧、不敢下手、怕出错等意识。<br>把精力花在对应的开发任务上，在再逐步的提升功能开发的难度，锻炼其模块熟悉能力，培养代码编写能力。<br>对于中级人员培养其系统设计能力，对于新需求的独立分析能力、逻辑流程图、接口时序图建模能力。<br>同时可适当放权让其加强对于初级人员的指导，提高自身工作的责任感。<br>对于高级人员一般具备系统的设计能力，就解决问题来说一般也可独立解决。<br>需要完善方法论，对于初、中级人员的工作安排，工作量估算、工作任务说明的意识培养。<br>同时深入注重性能优化能力的提高（比如去年发数据问题），发展个人某个场景或领域的业务能力，成为团队中某个领域的业务、技术骨干。<br>一个团队基本上这三个层次的人比较多，可以在完成部门任务业务需求的同时，不定期的举行技术培训、技术分享。<br>可以采用人员轮流制，积分考核，积分高低与个人的年终奖金及次年涨薪幅度挂钩，以激励的方式提高积极性。<br>形成较好的团队技术文化氛围，形成一个人带人，人帮人的协作氛围。</p>
+<h3 id="3-2独立意识的培养"><a href="#3-2独立意识的培养" class="headerlink" title="3.2独立意识的培养"></a>3.2独立意识的培养</h3><p>独立非常关键，无论对于任何级别的人都需要独立。<br>所谓独立就是能独自掌控事情。<br>交给一个功能开发能独自把功能开发做得很好；<br>交给一个模块，能把这个模块快速开发完，运行稳定；<br>交给一个系统，能把系统从设计、编码、上线完整的接住；<br>交给一个项目，能带领一个小团队从需求一直到上线，完成这个项目，不需要领导或部门经理过多的操心开发事宜、按时按质地的与交付部门衔接交付。<br>做到这一步意味着每个层次的同事是可托付的，否则就会出现人员频繁“补位”，组长去干组员的活，经理干组长的活…..</p>
+<h3 id="3-3思维能力培养"><a href="#3-3思维能力培养" class="headerlink" title="3.3思维能力培养"></a>3.3思维能力培养</h3><p>当同事或下属遇到问题时，很多人的解决办法是告诉他问题的解决办法，然后让他把问题解决好，而不去讲后面的原因，这个可能在我们运维或初期开发中比较常见。<br>如果只做到这一步，是没有起到培养的作用。<br>对于一个团队，把问题解决了只能达到及格的分数，更需要在解决问题的基础上升华，培养思维能力。<br>思维能力的训练和培养只能靠平时，在面对一个个问题时，通过一次次讨论来锻炼、刨根问底，深挖问题的背景，掌握解决问题办法背后的技术原理，研究是否有更好的解决办法。</p>
+<h2 id="4、总结"><a href="#4、总结" class="headerlink" title="4、总结"></a>4、总结</h2><p>孔老夫子说“防祸于先而不致于后伤情，知而慎行，君子不立危墙之下，焉可等闲视之”。<br>首先我自己要知行合一，在日后的工作中保持如临深渊、如履薄冰的工作态度。<br>也希望我们的团队战斗力、凝聚力越来越强。<br>有了这样的团队，才能在公司发展的不同阶段、自如的切换到不同的业务中建设高楼。</p>
+
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/" class="">
+              团队管理
+            </a>
+          
+            <a href="/tags/%E5%9B%A2%E9%98%9F%E4%BA%BA%E5%91%98%E6%8A%80%E6%9C%AF%E5%9F%B9%E5%85%BB/" class="">
+              团队人员技术培养
+            </a>
+          
+        </div>
+        
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>王天文</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/post/tuan-dui-guan-li/tuan-dui-ren-yuan-ji-zhu-pei-yang/" target="_blank" title="团队管理、团队人员技术培养的思考">http://tocota.github.io/post/tuan-dui-guan-li/tuan-dui-ren-yuan-ji-zhu-pei-yang/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-6262f763cbd2decf3b71740ffaaf7df2_1440w.jpg?source=1940ef5c" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-6262f763cbd2decf3b71740ffaaf7df2_1440w.jpg?source=1940ef5c" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+    </div>
+    <a href="/post/ge-chong-gong-ju/idea/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fas fa-angle-right"></i>
+        <div class="title-text">Intellij IDEA的激活（使用破解补丁永久激活）</div>
+      </div>
+      <!-- <div class="content">
+        Intellij IDEA的激活（使用破解补丁永久激活）下载并安装IDEA官网  https://www.jetbrai
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
+
+  <div id="myComment">
+    
+      
+<section id="comments" style="padding: 1em; margin: 15px auto;"
+	class="animated bounceInUp">
+	<div id="vcomment" class="comment"></div>
+</section>
+<style>
+	#comments {
+		background: rgba(255,255,255,0.9);
+	}
+	#veditor {
+		background-image: url('https://img.zcool.cn/community/01a253594c71cfa8012193a329a77f.gif');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-color: rgba(255, 255, 255, 0);
+		resize: vertical;
+	}
+	#veditor:focus{
+		background-position-y: 200px;
+		transition: all 0.2s ease-in-out 0s;
+	}
+	#vcomment .vcards .vcard .vh .vhead .vtag.vvisitor {
+		background-color: #42b983;
+	}
+	.v[data-class=v] .vbtn:active, .v[data-class=v] .vbtn:hover {
+		color: #42b983;
+		border-color: #42b983;
+	}
+	#vcomment .vcards .vcard .vhead .vsys i {
+		display: none;
+	}
+	/* 底部valine链接 */
+	#vcomment .vpower {
+		display: none;
+	}
+	
+	/* 底下注释是修改 名称和邮箱和网址输入框的样式 */
+	/* #vcomment .vheader {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	#vcomment .vheader .vnick {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	}
+
+	#vcomment .vheader .vmail {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	}
+
+	#vcomment .vheader .vlink {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	} */
+
+	img.vimg {
+		transition: all 1s;
+		/* 头像旋转时间为 1s */
+	}
+
+	img.vimg:hover {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+
+	#vcomment .vcards .vcard {
+		padding: 15px 20px 0 20px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+		transition: all .3s
+	}
+
+	#vcomment .vcards .vcard:hover {
+		box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+	}
+
+	#vcomment .vcards .vcard .vh .vcard {
+		border: none;
+		box-shadow: none;
+	}
+</style>
+    
+  </div>
+
+<!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
+  <!-- 文章详情页右侧目录 -->
+
+  <div class="toc-aside">
+    <div class="toc-main">
+      <div class="toc-aside-title">
+        <i class="fas fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
+        
+          <div class="toc-open-close">本文目录</div>
+        
+      </div>
+      <div class="toc-content">
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 手机端目录按钮 -->
+  <div id="toc-mobile-btn">
+    <i class="fas fa-list-ul" aria-hidden="true"></i>
+  </div>
+  <!-- js在scripts目录下的的toc.ejs里面 -->
+  
+
   <script>
-  function typedFn() {
-    const el = '#archive-header-desc';
-    const type = 'archive';
-    let desc = '愿你如风，被人温柔以待'
-    var typed = new Typed(el, {
-      strings: [desc],
-      startDelay: 100,
-      typeSpeed: 100,
-      loop: true,
-      backSpeed: 50,
-      showCursor: true
-    });
-  }
-  typedFn();
+    function openBtnClickFn () {
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    };
+    openBtnClickFn();
+    document.addEventListener('pjax:complete', function () {
+      openBtnClickFn();
+    })
+    
+  </script>
+
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
+</div>
+
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || 'https://api.btstu.cn/sjbz/api.php,https://pica.zhimg.com/80/v2-9659f2305acb80f25ced33aa980092c1_1440w.jpg,https://pica.zhimg.com/80/v2-292e6340491bd97f9d014d6be3371c04_1440w.jpg';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
 </script>
-  
-  </div>
-  <div class="mask-box"></div>
-</div>
 
-<div class="archive-video">
-  <video class="full-video" autoplay loop muted>
-      <source style="width: 100%;height: 100vh;" src="/">
-  </video>
-  <div class="video-header-title">
-    archive
-  </div>
-  <div class="video-header-desc">
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
   
-      <span class="title" id="archive-video-header-desc"></span>
-      <script>
-  function typedFn() {
-    const el = '#archive-video-header-desc';
-    const type = 'archive';
-    let desc = '愿你如风，被人温柔以待'
-    var typed = new Typed(el, {
-      strings: [desc],
-      startDelay: 100,
-      typeSpeed: 100,
-      loop: true,
-      backSpeed: 50,
-      showCursor: true
-    });
-  }
-  typedFn();
 </script>
-      
-  </div>
-  <div class="mask-box"></div>
-</div>
 
-<!-- hash算法 -->
-
-
-<div class="archive-main">
-  <section class="archive">
-    <div class="archive-content">
-      <ul class="post-archive">
-        
-        
-          
-            
-            <div class="year" data-aos="zoom-in-up">
-                <div class="bullet"></div>
-                <a href="/archives/2017">2017</a>
-            </div>
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/java-zhuan-lan/3-java-io/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/7.jpg" class="lazyload placeholder" data-srcset="/medias/7.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">03-28</span>
-              </div>
-              <a class="post-title" href="/post/java-zhuan-lan/3-java-io/">3、Java IO</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/java-zhuan-lan/2-java-ji-he/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">03-26</span>
-              </div>
-              <a class="post-title" href="/post/java-zhuan-lan/2-java-ji-he/">2、Java集合</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/java-zhuan-lan/1-java-ji-chu/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">03-24</span>
-              </div>
-              <a class="post-title" href="/post/java-zhuan-lan/1-java-ji-chu/">1、Java基础</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/ji-suan-ji-wang-luo/3-socket/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/15.jpg" class="lazyload placeholder" data-srcset="/medias/15.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">03-20</span>
-              </div>
-              <a class="post-title" href="/post/ji-suan-ji-wang-luo/3-socket/">Socket</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/ji-suan-ji-wang-luo/2-http-xie-yi/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">03-17</span>
-              </div>
-              <a class="post-title" href="/post/ji-suan-ji-wang-luo/2-http-xie-yi/">HTTP协议</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/ji-suan-ji-wang-luo/1-ji-suan-ji-wang-luo/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/10.jpg" class="lazyload placeholder" data-srcset="/medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">03-13</span>
-              </div>
-              <a class="post-title" href="/post/ji-suan-ji-wang-luo/1-ji-suan-ji-wang-luo/">计算机网络</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/cao-zuo-xi-tong/2-linux/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-26</span>
-              </div>
-              <a class="post-title" href="/post/cao-zuo-xi-tong/2-linux/">Linux</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/cao-zuo-xi-tong/1-ji-suan-ji-cao-zuo-xi-tong/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/3.jpg" class="lazyload placeholder" data-srcset="/medias/3.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-20</span>
-              </div>
-              <a class="post-title" href="/post/cao-zuo-xi-tong/1-ji-suan-ji-cao-zuo-xi-tong/">计算机操作系统</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-yi/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/6.jpg" class="lazyload placeholder" data-srcset="/medias/6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">01-22</span>
-              </div>
-              <a class="post-title" href="/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-yi/">K线图基础知识（一）</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-er/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">01-22</span>
-              </div>
-              <a class="post-title" href="/post/gu-piao-zhuan-lan/k-xian-tu-ji-chu-zhi-shi-er/">K线图基础知识（二）</a>
-            </div>
-          </li>
-        
-      </ul>
-    </div>
-  </section>
-  <div class="w-70">
-    
-  <!-- <nav class="page-nav">
-    <a class="extend prev" rel="prev" href="/archives/">上一页</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">下一页</a>
-  </nav> -->
-  <div class="page-nav">
-    
-      <a href="/archives/"
-         class="page-nav-pre">
-         <i class="fas fa-angle-left"></i><span class="ml-5">上一页</span>
-      </a>
-    
-    <div class="page-info">
-        <div class="page-info-text">2 / 3</div>
-    </div>
-    
-      <a href="/archives/page/3/"
-         class="page-nav-next">
-          <span class="mr-5">下一页</span><i class="fas fa-angle-right"></i>
-      </a>
-      
-  </div>
-
-  </div>
-</div>
 
       </main>
     </div>
